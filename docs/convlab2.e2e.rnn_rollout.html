@@ -1,0 +1,1315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.e2e.rnn_rollout package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.e2e.rnn_rollout package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.agent">convlab2.e2e.rnn_rollout.agent module</a></li>
+<li><a class="reference internal" href="#convlab2-e2e-rnn-rollout-avg-rank-module">convlab2.e2e.rnn_rollout.avg_rank module</a></li>
+<li><a class="reference internal" href="#convlab2-e2e-rnn-rollout-chat-module">convlab2.e2e.rnn_rollout.chat module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.config">convlab2.e2e.rnn_rollout.config module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.data">convlab2.e2e.rnn_rollout.data module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.dialog">convlab2.e2e.rnn_rollout.dialog module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.domain">convlab2.e2e.rnn_rollout.domain module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.eval_selfplay">convlab2.e2e.rnn_rollout.eval_selfplay module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.metric">convlab2.e2e.rnn_rollout.metric module</a></li>
+<li><a class="reference internal" href="#convlab2-e2e-rnn-rollout-reinforce-module">convlab2.e2e.rnn_rollout.reinforce module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.rnn_model">convlab2.e2e.rnn_rollout.rnn_model module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.rnnrollout">convlab2.e2e.rnn_rollout.rnnrollout module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.split">convlab2.e2e.rnn_rollout.split module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.utils">convlab2.e2e.rnn_rollout.utils module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.vis">convlab2.e2e.rnn_rollout.vis module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.e2e.rnn_rollout package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.e2e.rnn_rollout.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-e2e-rnn-rollout-package">
+<h1>convlab2.e2e.rnn_rollout package<a class="headerlink" href="#convlab2-e2e-rnn-rollout-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.e2e.rnn_rollout.deal_or_not.html">convlab2.e2e.rnn_rollout.deal_or_not package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.deal_or_not.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.deal_or_not.html#module-convlab2.e2e.rnn_rollout.deal_or_not.model">convlab2.e2e.rnn_rollout.deal_or_not.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.deal_or_not.html#module-convlab2.e2e.rnn_rollout.deal_or_not">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html">convlab2.e2e.rnn_rollout.engines package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#module-convlab2.e2e.rnn_rollout.engines.engine">convlab2.e2e.rnn_rollout.engines.engine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#module-convlab2.e2e.rnn_rollout.engines.latent_clustering_engine">convlab2.e2e.rnn_rollout.engines.latent_clustering_engine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#module-convlab2.e2e.rnn_rollout.engines.rnn_engine">convlab2.e2e.rnn_rollout.engines.rnn_engine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#module-convlab2.e2e.rnn_rollout.engines.selection_engine">convlab2.e2e.rnn_rollout.engines.selection_engine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#module-convlab2.e2e.rnn_rollout.engines">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html">convlab2.e2e.rnn_rollout.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.attn">convlab2.e2e.rnn_rollout.models.attn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.ctx_encoder">convlab2.e2e.rnn_rollout.models.ctx_encoder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.latent_clustering_model">convlab2.e2e.rnn_rollout.models.latent_clustering_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.modules">convlab2.e2e.rnn_rollout.models.modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.rnn_model">convlab2.e2e.rnn_rollout.models.rnn_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.selection_model">convlab2.e2e.rnn_rollout.models.selection_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models.utils">convlab2.e2e.rnn_rollout.models.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.e2e.rnn_rollout.models.html#module-convlab2.e2e.rnn_rollout.models">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.agent">
+<span id="convlab2-e2e-rnn-rollout-agent-module"></span><h2>convlab2.e2e.rnn_rollout.agent module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.agent" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.agent.</code><code class="sig-name descname">RnnRolloutAgent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Alice'</span></em>, <em class="sig-param"><span class="n">allow_no_agreement</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">train</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">diverse</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">max_dec_len</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.dialog_agent.html#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.agent.Agent</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.choose">
+<code class="sig-name descname">choose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.choose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.feed_context">
+<code class="sig-name descname">feed_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.feed_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.feed_partner_context">
+<code class="sig-name descname">feed_partner_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">partner_context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.feed_partner_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the class variables to prepare for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.response">
+<code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response given user input.</p>
+<p>The data type of input and response can be either str or list of tuples, condition on the form of agent.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>If the agent is a pipeline agent with NLU, DST and Policy, then type(input) == str and
+type(response) == list of tuples.</p>
+</dd>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>observation (str or list of tuples):</dt><dd><p>The input to the agent.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>response (str or list of tuples):</dt><dd><p>The response generated by the agent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agree</span></em>, <em class="sig-param"><span class="n">reward</span></em>, <em class="sig-param"><span class="n">choice</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_choice</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_input</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_reward</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.agent.RnnRolloutAgent.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="convlab2-e2e-rnn-rollout-avg-rank-module">
+<h2>convlab2.e2e.rnn_rollout.avg_rank module<a class="headerlink" href="#convlab2-e2e-rnn-rollout-avg-rank-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="convlab2-e2e-rnn-rollout-chat-module">
+<h2>convlab2.e2e.rnn_rollout.chat module<a class="headerlink" href="#convlab2-e2e-rnn-rollout-chat-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.config">
+<span id="convlab2-e2e-rnn-rollout-config-module"></span><h2>convlab2.e2e.rnn_rollout.config module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.config" title="Permalink to this headline">¶</a></h2>
+<p>Configuration script. Stores variables and settings used across application</p>
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.data">
+<span id="convlab2-e2e-rnn-rollout-data-module"></span><h2>convlab2.e2e.rnn_rollout.data module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.data" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.CountDictionary">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">CountDictionary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.CountDictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.data.Dictionary" title="convlab2.e2e.rnn_rollout.data.Dictionary"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.Dictionary</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.CountDictionary.get_idx">
+<code class="sig-name descname">get_idx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.CountDictionary.get_idx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.CountDictionary.get_key">
+<code class="sig-name descname">get_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.CountDictionary.get_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.CountDictionary.read_tag">
+<code class="sig-name descname">read_tag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">tag</span></em>, <em class="sig-param"><span class="n">init_dict</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.CountDictionary.read_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">Dictionary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.add_word">
+<code class="sig-name descname">add_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.add_word" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.get_idx">
+<code class="sig-name descname">get_idx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.get_idx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.get_word">
+<code class="sig-name descname">get_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.get_word" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.i2w">
+<code class="sig-name descname">i2w</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.i2w" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.read_tag">
+<code class="sig-name descname">read_tag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">tag</span></em>, <em class="sig-param"><span class="n">freq_cutoff</span><span class="o">=</span><span class="default_value">- 1</span></em>, <em class="sig-param"><span class="n">init_dict</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.read_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.Dictionary.w2i">
+<code class="sig-name descname">w2i</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.Dictionary.w2i" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.ItemDictionary">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">ItemDictionary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selection_size</span></em>, <em class="sig-param"><span class="n">init</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.ItemDictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.data.Dictionary" title="convlab2.e2e.rnn_rollout.data.Dictionary"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.Dictionary</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.ItemDictionary.read_tag">
+<code class="sig-name descname">read_tag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">tag</span></em>, <em class="sig-param"><span class="n">init_dict</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.ItemDictionary.read_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.ItemDictionary.w2i">
+<code class="sig-name descname">w2i</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">words</span></em>, <em class="sig-param"><span class="n">inv</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.ItemDictionary.w2i" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.PhraseCorpus">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">PhraseCorpus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">freq_cutoff</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">train</span><span class="o">=</span><span class="default_value">'train.txt'</span></em>, <em class="sig-param"><span class="n">valid</span><span class="o">=</span><span class="default_value">'val.txt'</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">'test.txt'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">sep_sel</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.PhraseCorpus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.data.WordCorpus" title="convlab2.e2e.rnn_rollout.data.WordCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.WordCorpus</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.PhraseCorpus.tokenize">
+<code class="sig-name descname">tokenize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.PhraseCorpus.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.SentenceCorpus">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">SentenceCorpus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">freq_cutoff</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">train</span><span class="o">=</span><span class="default_value">'train.txt'</span></em>, <em class="sig-param"><span class="n">valid</span><span class="o">=</span><span class="default_value">'val.txt'</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">'test.txt'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">sep_sel</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.data.WordCorpus" title="convlab2.e2e.rnn_rollout.data.WordCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.WordCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.data.WordCorpus">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">WordCorpus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="n">freq_cutoff</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">train</span><span class="o">=</span><span class="default_value">'train.txt'</span></em>, <em class="sig-param"><span class="n">valid</span><span class="o">=</span><span class="default_value">'val.txt'</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">'test.txt'</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">sep_sel</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.WordCorpus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.WordCorpus.test_dataset">
+<code class="sig-name descname">test_dataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">shuffle</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.WordCorpus.test_dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.WordCorpus.tokenize">
+<code class="sig-name descname">tokenize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.WordCorpus.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.WordCorpus.train_dataset">
+<code class="sig-name descname">train_dataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">shuffle</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.WordCorpus.train_dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.data.WordCorpus.valid_dataset">
+<code class="sig-name descname">valid_dataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">shuffle</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.WordCorpus.valid_dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.data.create_dicts_from_file">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">create_dicts_from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">freq_cutoff</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.create_dicts_from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.data.get_tag">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">get_tag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tokens</span></em>, <em class="sig-param"><span class="n">tag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.get_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.data.read_lines">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.data.</code><code class="sig-name descname">read_lines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.data.read_lines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.dialog">
+<span id="convlab2-e2e-rnn-rollout-dialog-module"></span><h2>convlab2.e2e.rnn_rollout.dialog module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.dialog" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.dialog.Dialog">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.dialog.</code><code class="sig-name descname">Dialog</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agents</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.Dialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.Dialog.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctxs</span></em>, <em class="sig-param"><span class="n">logger</span></em>, <em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">5000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.Dialog.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.Dialog.show_metrics">
+<code class="sig-name descname">show_metrics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.Dialog.show_metrics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.dialog.</code><code class="sig-name descname">DialogLogger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">log_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">append</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.CODE2ITEM">
+<code class="sig-name descname">CODE2ITEM</code><em class="property"> = [('item0', 'book'), ('item1', 'hat'), ('item2', 'ball')]</em><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.CODE2ITEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump">
+<code class="sig-name descname">dump</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">forced</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_agreement">
+<code class="sig-name descname">dump_agreement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_agreement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_choice">
+<code class="sig-name descname">dump_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_ctx">
+<code class="sig-name descname">dump_ctx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_ctx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_reward">
+<code class="sig-name descname">dump_reward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">agree</span></em>, <em class="sig-param"><span class="n">reward</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_sent">
+<code class="sig-name descname">dump_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">sent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger.dump_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.dialog.</code><code class="sig-name descname">DialogSelfTrainLogger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">log_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.dialog.DialogLogger" title="convlab2.e2e.rnn_rollout.dialog.DialogLogger"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.dialog.DialogLogger</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_agreement">
+<code class="sig-name descname">dump_agreement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_agreement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_choice">
+<code class="sig-name descname">dump_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_ctx">
+<code class="sig-name descname">dump_ctx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_ctx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_reward">
+<code class="sig-name descname">dump_reward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">agree</span></em>, <em class="sig-param"><span class="n">reward</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.dialog.DialogSelfTrainLogger.dump_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.domain">
+<span id="convlab2-e2e-rnn-rollout-domain-module"></span><h2>convlab2.e2e.rnn_rollout.domain module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.domain" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.domain.</code><code class="sig-name descname">Domain</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Domain interface.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.generate_choices">
+<code class="sig-name descname">generate_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.generate_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.input_length">
+<code class="sig-name descname">input_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.input_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.parse_choice">
+<code class="sig-name descname">parse_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.parse_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.parse_context">
+<code class="sig-name descname">parse_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.parse_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.parse_human_choice">
+<code class="sig-name descname">parse_human_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.parse_human_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.score">
+<code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em>, <em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.score_choices">
+<code class="sig-name descname">score_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">choices</span></em>, <em class="sig-param"><span class="n">ctxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.score_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.Domain.selection_length">
+<code class="sig-name descname">selection_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.Domain.selection_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.domain.</code><code class="sig-name descname">ObjectDivisionDomain</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.domain.Domain" title="convlab2.e2e.rnn_rollout.domain.Domain"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.domain.Domain</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.generate_choices">
+<code class="sig-name descname">generate_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">with_disagreement</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.generate_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.input_length">
+<code class="sig-name descname">input_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.input_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.num_choices">
+<code class="sig-name descname">num_choices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.num_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_choice">
+<code class="sig-name descname">parse_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_context">
+<code class="sig-name descname">parse_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_human_choice">
+<code class="sig-name descname">parse_human_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.parse_human_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.score">
+<code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em>, <em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.score_choices">
+<code class="sig-name descname">score_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">choices</span></em>, <em class="sig-param"><span class="n">ctxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.score_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.selection_length">
+<code class="sig-name descname">selection_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain.selection_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.domain.</code><code class="sig-name descname">ObjectTradeDomain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_items</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain" title="convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.domain.ObjectDivisionDomain</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.generate_choices">
+<code class="sig-name descname">generate_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.generate_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.input_length">
+<code class="sig-name descname">input_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.input_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.parse_human_choice">
+<code class="sig-name descname">parse_human_choice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.parse_human_choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.score">
+<code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em>, <em class="sig-param"><span class="n">choice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.score_choices">
+<code class="sig-name descname">score_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">choices</span></em>, <em class="sig-param"><span class="n">ctxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.score_choices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.selection_length">
+<code class="sig-name descname">selection_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.ObjectTradeDomain.selection_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.domain.get_domain">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.domain.</code><code class="sig-name descname">get_domain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.domain.get_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.eval_selfplay">
+<span id="convlab2-e2e-rnn-rollout-eval-selfplay-module"></span><h2>convlab2.e2e.rnn_rollout.eval_selfplay module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.eval_selfplay" title="Permalink to this headline">¶</a></h2>
+<p>Script to evaluate selfplay.
+It computes agreement rate, average score and Pareto optimality.</p>
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.eval_selfplay.compute_score">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.eval_selfplay.</code><code class="sig-name descname">compute_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vals</span></em>, <em class="sig-param"><span class="n">picks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.eval_selfplay.compute_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the score of the selection.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.eval_selfplay.gen_choices">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.eval_selfplay.</code><code class="sig-name descname">gen_choices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cnts</span></em>, <em class="sig-param"><span class="n">idx</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">choice</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.eval_selfplay.gen_choices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate all the valid choices.
+It generates both yours and your opponent choices.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.eval_selfplay.main">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.eval_selfplay.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.eval_selfplay.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.eval_selfplay.parse_line">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.eval_selfplay.</code><code class="sig-name descname">parse_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em>, <em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.eval_selfplay.parse_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.eval_selfplay.parse_log">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.eval_selfplay.</code><code class="sig-name descname">parse_log</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.eval_selfplay.parse_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the log file produced by selfplay.
+See the format of that log file to get more details.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.metric">
+<span id="convlab2-e2e-rnn-rollout-metric-module"></span><h2>convlab2.e2e.rnn_rollout.metric module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.metric" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.AverageMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">AverageMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.AverageMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric" title="convlab2.e2e.rnn_rollout.metric.NumericMetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.metric.NumericMetric</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.AverageMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.AverageMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">MetricsContainer</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.dict">
+<code class="sig-name descname">dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_average">
+<code class="sig-name descname">register_average</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_moving_average">
+<code class="sig-name descname">register_moving_average</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_moving_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_moving_percentage">
+<code class="sig-name descname">register_moving_percentage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_moving_percentage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_ngram">
+<code class="sig-name descname">register_ngram</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_ngram" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_percentage">
+<code class="sig-name descname">register_percentage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_percentage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_similarity">
+<code class="sig-name descname">register_similarity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_similarity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_time">
+<code class="sig-name descname">register_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_uniqueness">
+<code class="sig-name descname">register_uniqueness</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.register_uniqueness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MetricsContainer.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MetricsContainer.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingAverageMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">MovingAverageMetric</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingAverageMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric" title="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.metric.MovingNumericMetric</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingAverageMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingAverageMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">MovingNumericMetric</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingPercentageMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">MovingPercentageMetric</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingPercentageMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.metric.MovingNumericMetric" title="convlab2.e2e.rnn_rollout.metric.MovingNumericMetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.metric.MovingNumericMetric</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.MovingPercentageMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.MovingPercentageMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.NGramMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">NGramMetric</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">ngram</span><span class="o">=</span><span class="default_value">- 1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NGramMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.metric.TextMetric" title="convlab2.e2e.rnn_rollout.metric.TextMetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.metric.TextMetric</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.NGramMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sen</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NGramMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.NumericMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">NumericMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.NumericMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.NumericMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.NumericMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.PercentageMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">PercentageMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.PercentageMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.metric.NumericMetric" title="convlab2.e2e.rnn_rollout.metric.NumericMetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.metric.NumericMetric</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.PercentageMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.PercentageMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.SimilarityMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">SimilarityMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.SimilarityMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.SimilarityMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sen</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.SimilarityMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.SimilarityMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.SimilarityMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.SimilarityMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.SimilarityMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.SimilarityMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.SimilarityMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.TextMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">TextMetric</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TextMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TextMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TextMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TextMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TextMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TextMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TextMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.TimeMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">TimeMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TimeMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TimeMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TimeMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TimeMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TimeMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TimeMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TimeMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.TimeMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.TimeMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.metric.UniquenessMetric">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.metric.</code><code class="sig-name descname">UniquenessMetric</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.UniquenessMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.UniquenessMetric.record">
+<code class="sig-name descname">record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sen</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.UniquenessMetric.record" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.UniquenessMetric.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.UniquenessMetric.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.UniquenessMetric.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.UniquenessMetric.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.metric.UniquenessMetric.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.metric.UniquenessMetric.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="convlab2-e2e-rnn-rollout-reinforce-module">
+<h2>convlab2.e2e.rnn_rollout.reinforce module<a class="headerlink" href="#convlab2-e2e-rnn-rollout-reinforce-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.rnn_model">
+<span id="convlab2-e2e-rnn-rollout-rnn-model-module"></span><h2>convlab2.e2e.rnn_rollout.rnn_model module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.rnn_model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.rnn_model.</code><code class="sig-name descname">RnnModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#convlab2.e2e.rnn_rollout.data.WordCorpus" title="convlab2.e2e.rnn_rollout.data.WordCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.WordCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine" title="convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_context">
+<code class="sig-name descname">forward_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_lm">
+<code class="sig-name descname">forward_lm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_lm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_selection">
+<code class="sig-name descname">forward_selection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.forward_selection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.generate_choice_logits">
+<code class="sig-name descname">generate_choice_logits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.generate_choice_logits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.init_weights">
+<code class="sig-name descname">init_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.init_weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">prefix_token</span><span class="o">=</span><span class="default_value">'THEM:'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.score_sent">
+<code class="sig-name descname">score_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sent</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">temperature</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.score_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.word2var">
+<code class="sig-name descname">word2var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.word2var" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">max_words</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">stop_tokens</span><span class="o">=</span><span class="default_value">['&lt;eos&gt;', '&lt;selection&gt;']</span></em>, <em class="sig-param"><span class="n">resume</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a sentence word by word and feed the output of the
+previous timestep as input to the next.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.write_batch">
+<code class="sig-name descname">write_batch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.write_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnn_model.RnnModel.zero_h">
+<code class="sig-name descname">zero_h</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">nhid</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">copies</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnn_model.RnnModel.zero_h" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.rnnrollout">
+<span id="convlab2-e2e-rnn-rollout-rnnrollout-module"></span><h2>convlab2.e2e.rnn_rollout.rnnrollout module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.rnnrollout" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.rnnrollout.</code><code class="sig-name descname">RNNRolloutAgent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">sel_model</span></em>, <em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'Alice'</span></em>, <em class="sig-param"><span class="n">train</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">diverse</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">max_total_len</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.dialog_agent.html#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.agent.Agent</span></code></a></p>
+<p>RNN dialog agent with rollout decoding.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.choose">
+<code class="sig-name descname">choose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.choose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.feed_context">
+<code class="sig-name descname">feed_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.feed_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.feed_partner_context">
+<code class="sig-name descname">feed_partner_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">partner_context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.feed_partner_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.get_reward">
+<code class="sig-name descname">get_reward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.get_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the class variables to prepare for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.is_terminated">
+<code class="sig-name descname">is_terminated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.is_terminated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.load_model">
+<code class="sig-name descname">load_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.load_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.response">
+<code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em>, <em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response given user input.</p>
+<p>The data type of input and response can be either str or list of tuples, condition on the form of agent.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>If the agent is a pipeline agent with NLU, DST and Policy, then type(input) == str and
+type(response) == list of tuples.</p>
+</dd>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>observation (str or list of tuples):</dt><dd><p>The input to the agent.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>response (str or list of tuples):</dt><dd><p>The response generated by the agent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agree</span></em>, <em class="sig-param"><span class="n">reward</span></em>, <em class="sig-param"><span class="n">choice</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_choice</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_input</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">partner_reward</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.rnnrollout.RNNRolloutAgent.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.split">
+<span id="convlab2-e2e-rnn-rollout-split-module"></span><h2>convlab2.e2e.rnn_rollout.split module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.split" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.conv">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">conv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.dialog_len">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">dialog_len</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.dialog_len" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.find">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tokens</span></em>, <em class="sig-param"><span class="n">tag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.invert">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">invert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cnts</span></em>, <em class="sig-param"><span class="n">sel</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.invert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.main">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.split.select">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.split.</code><code class="sig-name descname">select</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.split.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.utils">
+<span id="convlab2-e2e-rnn-rollout-utils-module"></span><h2>convlab2.e2e.rnn_rollout.utils module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.utils" title="Permalink to this headline">¶</a></h2>
+<p>Various helpers.</p>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.utils.ContextGenerator">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">ContextGenerator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.ContextGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Dialogue context generator. Generates contexes from the file.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.utils.ContextGenerator.iter">
+<code class="sig-name descname">iter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nepoch</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.ContextGenerator.iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.utils.ContextGenerator.sample">
+<code class="sig-name descname">sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.ContextGenerator.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.utils.ManualContextGenerator">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">ManualContextGenerator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_types</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">num_objects</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">max_score</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.ManualContextGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Dialogue context generator. Takes contexes from stdin.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.utils.ManualContextGenerator.sample">
+<code class="sig-name descname">sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.ManualContextGenerator.sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.backward_hook">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">backward_hook</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">grad</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.backward_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook for backward pass.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.is_selection">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">is_selection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">out</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.is_selection" title="Permalink to this definition">¶</a></dt>
+<dd><p>if dialog end</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.load_model">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">load_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">map_location</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.load_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads model from a file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.prob_random">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">prob_random</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.prob_random" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints out the states of various RNGs.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.save_model">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">save_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">file_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.save_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serializes model to a file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.set_seed">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">set_seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.set_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets random seed everywhere.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.utils.use_cuda">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.utils.</code><code class="sig-name descname">use_cuda</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enabled</span></em>, <em class="sig-param"><span class="n">device_id</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.utils.use_cuda" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verifies if CUDA is available and sets default device to be device_id.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.vis">
+<span id="convlab2-e2e-rnn-rollout-vis-module"></span><h2>convlab2.e2e.rnn_rollout.vis module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.vis" title="Permalink to this headline">¶</a></h2>
+<p>A visualization library. Relies on visdom.</p>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.vis.ModulePlot">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.vis.</code><code class="sig-name descname">ModulePlot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module</span></em>, <em class="sig-param"><span class="n">plot_weight</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">plot_grad</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">running_n</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.vis.ModulePlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A helper class that plots norms of weights and gradients for a given module.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.vis.ModulePlot.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.vis.ModulePlot.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.vis.Plot">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.vis.</code><code class="sig-name descname">Plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">metrics</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">ylabel</span></em>, <em class="sig-param"><span class="n">xlabel</span><span class="o">=</span><span class="default_value">'t'</span></em>, <em class="sig-param"><span class="n">running_n</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.vis.Plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A class for plotting and updating the plot in real time.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.vis.Plot.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.vis.Plot.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

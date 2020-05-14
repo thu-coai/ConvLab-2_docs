@@ -1,0 +1,737 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.policy package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.policy package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.evaluate">convlab2.policy.evaluate module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.policy">convlab2.policy.policy module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.rlmodule">convlab2.policy.rlmodule module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.vec">convlab2.policy.vec module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.policy package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.policy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-policy-package">
+<h1>convlab2.policy package<a class="headerlink" href="#convlab2-policy-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.gdpl.html">convlab2.policy.gdpl package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.gdpl.multiwoz.html">convlab2.policy.gdpl.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.gdpl.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.gdpl.multiwoz.html#module-convlab2.policy.gdpl.multiwoz.gdpl_policy">convlab2.policy.gdpl.multiwoz.gdpl_policy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.gdpl.multiwoz.html#module-convlab2.policy.gdpl.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#module-convlab2.policy.gdpl.estimator">convlab2.policy.gdpl.estimator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#module-convlab2.policy.gdpl.gdpl">convlab2.policy.gdpl.gdpl module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#module-convlab2.policy.gdpl.train">convlab2.policy.gdpl.train module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.gdpl.html#module-convlab2.policy.gdpl">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.mdrg.html">convlab2.policy.mdrg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mdrg.html#subpackages">Subpackages</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mdrg.html#module-convlab2.policy.mdrg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.mle.html">convlab2.policy.mle package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.mle.camrest.html">convlab2.policy.mle.camrest package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.camrest.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.camrest.html#module-convlab2.policy.mle.camrest.loader">convlab2.policy.mle.camrest.loader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.camrest.html#module-convlab2.policy.mle.camrest.mle">convlab2.policy.mle.camrest.mle module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.camrest.html#convlab2-policy-mle-camrest-train-module">convlab2.policy.mle.camrest.train module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.camrest.html#module-convlab2.policy.mle.camrest">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html">convlab2.policy.mle.crosswoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#module-convlab2.policy.mle.crosswoz.evaluate">convlab2.policy.mle.crosswoz.evaluate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#module-convlab2.policy.mle.crosswoz.loader">convlab2.policy.mle.crosswoz.loader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#module-convlab2.policy.mle.crosswoz.mle">convlab2.policy.mle.crosswoz.mle module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#module-convlab2.policy.mle.crosswoz.train">convlab2.policy.mle.crosswoz.train module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.crosswoz.html#module-convlab2.policy.mle.crosswoz">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html">convlab2.policy.mle.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html#module-convlab2.policy.mle.multiwoz.loader">convlab2.policy.mle.multiwoz.loader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html#module-convlab2.policy.mle.multiwoz.mle">convlab2.policy.mle.multiwoz.mle module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html#module-convlab2.policy.mle.multiwoz.train">convlab2.policy.mle.multiwoz.train module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.mle.multiwoz.html#module-convlab2.policy.mle.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#module-convlab2.policy.mle.loader">convlab2.policy.mle.loader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#module-convlab2.policy.mle.mle">convlab2.policy.mle.mle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#module-convlab2.policy.mle.train">convlab2.policy.mle.train module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.mle.html#module-convlab2.policy.mle">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.pg.html">convlab2.policy.pg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.pg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.pg.multiwoz.html">convlab2.policy.pg.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.pg.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.pg.multiwoz.html#module-convlab2.policy.pg.multiwoz.pg_policy">convlab2.policy.pg.multiwoz.pg_policy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.pg.multiwoz.html#module-convlab2.policy.pg.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.pg.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.pg.html#module-convlab2.policy.pg.pg">convlab2.policy.pg.pg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.pg.html#module-convlab2.policy.pg.train">convlab2.policy.pg.train module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.pg.html#module-convlab2.policy.pg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.ppo.html">convlab2.policy.ppo package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html">convlab2.policy.ppo.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#module-convlab2.policy.ppo.multiwoz.ppo_policy">convlab2.policy.ppo.multiwoz.ppo_policy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#module-convlab2.policy.ppo.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.html#module-convlab2.policy.ppo.ppo">convlab2.policy.ppo.ppo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.html#module-convlab2.policy.ppo.train">convlab2.policy.ppo.train module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.html#module-convlab2.policy.ppo">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.rule.html">convlab2.policy.rule package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.rule.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.rule.camrest.html">convlab2.policy.rule.camrest package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.camrest.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.camrest.html#module-convlab2.policy.rule.camrest.policy_agenda_camrest">convlab2.policy.rule.camrest.policy_agenda_camrest module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.camrest.html#module-convlab2.policy.rule.camrest.rule">convlab2.policy.rule.camrest.rule module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.camrest.html#module-convlab2.policy.rule.camrest.rule_based_camrest_bot">convlab2.policy.rule.camrest.rule_based_camrest_bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.camrest.html#module-convlab2.policy.rule.camrest">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.rule.crosswoz.html">convlab2.policy.rule.crosswoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.crosswoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.crosswoz.html#module-convlab2.policy.rule.crosswoz.evaluate">convlab2.policy.rule.crosswoz.evaluate module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.crosswoz.html#module-convlab2.policy.rule.crosswoz.rule_simulator">convlab2.policy.rule.crosswoz.rule_simulator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.crosswoz.html#module-convlab2.policy.rule.crosswoz">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html">convlab2.policy.rule.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html#module-convlab2.policy.rule.multiwoz.policy_agenda_multiwoz">convlab2.policy.rule.multiwoz.policy_agenda_multiwoz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html#module-convlab2.policy.rule.multiwoz.rule">convlab2.policy.rule.multiwoz.rule module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html#module-convlab2.policy.rule.multiwoz.rule_based_multiwoz_bot">convlab2.policy.rule.multiwoz.rule_based_multiwoz_bot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.rule.multiwoz.html#module-convlab2.policy.rule.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.rule.html#module-convlab2.policy.rule">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.vector.html">convlab2.policy.vector package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#module-convlab2.policy.vector.dataset">convlab2.policy.vector.dataset module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#module-convlab2.policy.vector.vector_camrest">convlab2.policy.vector.vector_camrest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#module-convlab2.policy.vector.vector_crosswoz">convlab2.policy.vector.vector_crosswoz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#module-convlab2.policy.vector.vector_multiwoz">convlab2.policy.vector.vector_multiwoz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vector.html#module-convlab2.policy.vector">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.policy.vhus.html">convlab2.policy.vhus package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.vhus.camrest.html">convlab2.policy.vhus.camrest package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.camrest.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.camrest.html#module-convlab2.policy.vhus.camrest.train">convlab2.policy.vhus.camrest.train module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.camrest.html#module-convlab2.policy.vhus.camrest.usermanager">convlab2.policy.vhus.camrest.usermanager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.camrest.html#module-convlab2.policy.vhus.camrest.vhus">convlab2.policy.vhus.camrest.vhus module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.camrest.html#module-convlab2.policy.vhus.camrest">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html">convlab2.policy.vhus.multiwoz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html#module-convlab2.policy.vhus.multiwoz.train">convlab2.policy.vhus.multiwoz.train module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html#module-convlab2.policy.vhus.multiwoz.usermanager">convlab2.policy.vhus.multiwoz.usermanager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html#module-convlab2.policy.vhus.multiwoz.vhus">convlab2.policy.vhus.multiwoz.vhus module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="convlab2.policy.vhus.multiwoz.html#module-convlab2.policy.vhus.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#module-convlab2.policy.vhus.train">convlab2.policy.vhus.train module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#module-convlab2.policy.vhus.usermodule">convlab2.policy.vhus.usermodule module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#module-convlab2.policy.vhus.util">convlab2.policy.vhus.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#module-convlab2.policy.vhus.vhus">convlab2.policy.vhus.vhus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.vhus.html#module-convlab2.policy.vhus">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.policy.evaluate">
+<span id="convlab2-policy-evaluate-module"></span><h2>convlab2.policy.evaluate module<a class="headerlink" href="#module-convlab2.policy.evaluate" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.evaluate">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_name</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">load_path</span></em>, <em class="sig-param"><span class="n">calculate_reward</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.init_logging">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">init_logging</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_dir_path</span></em>, <em class="sig-param"><span class="n">path_suffix</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.init_logging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.sample">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em>, <em class="sig-param"><span class="n">process_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given batchsz number of task, the batchsz will be splited equally to each processes
+and when processes return, it merge all data and return</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param env</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">param policy</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>batchsz</strong> – <dl class="field-list simple">
+<dt class="field-odd">param process_num</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>batch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.sampler">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">sampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">queue</span></em>, <em class="sig-param"><span class="n">evt</span></em>, <em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.sampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a sampler function, and it will be called by multiprocess.Process to sample data from environment by multiple
+processes.
+:param pid: process id
+:param queue: multiprocessing.Queue, to collect sampled data
+:param evt: multiprocessing.Event, to keep the process alive
+:param env: environment instance
+:param policy: policy network, to generate action from current policy
+:param batchsz: total sampled items
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.policy.policy">
+<span id="convlab2-policy-policy-module"></span><h2>convlab2.policy.policy module<a class="headerlink" href="#module-convlab2.policy.policy" title="Permalink to this headline">¶</a></h2>
+<p>Policy Interface</p>
+<dl class="py class">
+<dt id="convlab2.policy.policy.Policy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.policy.</code><code class="sig-name descname">Policy</code><a class="headerlink" href="#convlab2.policy.policy.Policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.util.html#convlab2.util.module.Module" title="convlab2.util.module.Module"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.util.module.Module</span></code></a></p>
+<p>Policy module interface.</p>
+<dl class="py method">
+<dt id="convlab2.policy.policy.Policy.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.policy.Policy.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict the next agent action given dialog state.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>state (dict or list of list):</dt><dd><p>when the policy takes dialogue state as input, the type is dict.
+else when the policy takes dialogue act as input, the type is list of list.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>action (list of list or str):</dt><dd><p>when the policy outputs dialogue act, the type is list of list.
+else when the policy outputs utterance directly, the type is str.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.policy.rlmodule">
+<span id="convlab2-policy-rlmodule-module"></span><h2>convlab2.policy.rlmodule module<a class="headerlink" href="#module-convlab2.policy.rlmodule" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.ContinuousPolicy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">ContinuousPolicy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_dim</span></em>, <em class="sig-param"><span class="n">h_dim</span></em>, <em class="sig-param"><span class="n">a_dim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.ContinuousPolicy.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.ContinuousPolicy.get_log_prob">
+<code class="sig-name descname">get_log_prob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy.get_log_prob" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – [b, s_dim]</p></li>
+<li><p><strong>a</strong> – [b, a_dim]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[b, 1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.ContinuousPolicy.select_action">
+<code class="sig-name descname">select_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">sample</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – [s_dim]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[a_dim]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.DiscretePolicy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">DiscretePolicy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_dim</span></em>, <em class="sig-param"><span class="n">h_dim</span></em>, <em class="sig-param"><span class="n">a_dim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.DiscretePolicy.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.DiscretePolicy.get_log_prob">
+<code class="sig-name descname">get_log_prob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy.get_log_prob" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – [b, s_dim]</p></li>
+<li><p><strong>a</strong> – [b, 1]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[b, 1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.DiscretePolicy.select_action">
+<code class="sig-name descname">select_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">sample</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – [s_dim]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.Memory">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">Memory</code><a class="headerlink" href="#convlab2.policy.rlmodule.Memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Memory.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_memory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Memory.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Memory.get_batch">
+<code class="sig-name descname">get_batch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batch_size</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Memory.get_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Memory.push">
+<code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Memory.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a transition.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.MultiDiscretePolicy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">MultiDiscretePolicy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_dim</span></em>, <em class="sig-param"><span class="n">h_dim</span></em>, <em class="sig-param"><span class="n">a_dim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.get_log_prob">
+<code class="sig-name descname">get_log_prob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy.get_log_prob" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – [b, s_dim]</p></li>
+<li><p><strong>a</strong> – [b, a_dim]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[b, 1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.select_action">
+<code class="sig-name descname">select_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">sample</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – [s_dim]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[a_dim]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.Transition">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">Transition</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">action</span></em>, <em class="sig-param"><span class="n">reward</span></em>, <em class="sig-param"><span class="n">next_state</span></em>, <em class="sig-param"><span class="n">mask</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Transition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Transition.action">
+<em class="property">property </em><code class="sig-name descname">action</code><a class="headerlink" href="#convlab2.policy.rlmodule.Transition.action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Transition.mask">
+<em class="property">property </em><code class="sig-name descname">mask</code><a class="headerlink" href="#convlab2.policy.rlmodule.Transition.mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Transition.next_state">
+<em class="property">property </em><code class="sig-name descname">next_state</code><a class="headerlink" href="#convlab2.policy.rlmodule.Transition.next_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Transition.reward">
+<em class="property">property </em><code class="sig-name descname">reward</code><a class="headerlink" href="#convlab2.policy.rlmodule.Transition.reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Transition.state">
+<em class="property">property </em><code class="sig-name descname">state</code><a class="headerlink" href="#convlab2.policy.rlmodule.Transition.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.Value">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">Value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_dim</span></em>, <em class="sig-param"><span class="n">hv_dim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.Value.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Value.forward" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – [b, s_dim]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[b, 1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.policy.vec">
+<span id="convlab2-policy-vec-module"></span><h2>convlab2.policy.vec module<a class="headerlink" href="#module-convlab2.policy.vec" title="Permalink to this headline">¶</a></h2>
+<p>Vector Interface</p>
+<dl class="py class">
+<dt id="convlab2.policy.vec.Vector">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.vec.</code><code class="sig-name descname">Vector</code><a class="headerlink" href="#convlab2.policy.vec.Vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.policy.vec.Vector.action_devectorize">
+<code class="sig-name descname">action_devectorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action_vec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vec.Vector.action_devectorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>recover an action</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>action_vec (np.array):</dt><dd><p>Dialog act vector</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>action (tuple):</dt><dd><p>Dialog act</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vec.Vector.generate_dict">
+<code class="sig-name descname">generate_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vec.Vector.generate_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the dict for mapping state/action into vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vec.Vector.state_vectorize">
+<code class="sig-name descname">state_vectorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vec.Vector.state_vectorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>vectorize a state</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>state (tuple):</dt><dd><p>Dialog state</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>state_vec (np.array):</dt><dd><p>Dialog state vector</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.policy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.policy" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

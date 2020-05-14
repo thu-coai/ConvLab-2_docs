@@ -1,0 +1,624 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.nlu.svm package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.nlu.svm package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.Classifier">convlab2.nlu.svm.Classifier module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.Features">convlab2.nlu.svm.Features module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.Tuples">convlab2.nlu.svm.Tuples module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.dataset_walker">convlab2.nlu.svm.dataset_walker module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.sutils">convlab2.nlu.svm.sutils module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm.train">convlab2.nlu.svm.train module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.svm">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.nlu.svm package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.nlu.svm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-nlu-svm-package">
+<h1>convlab2.nlu.svm package<a class="headerlink" href="#convlab2-nlu-svm-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.nlu.svm.camrest.html">convlab2.nlu.svm.camrest package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.camrest.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.camrest.html#module-convlab2.nlu.svm.camrest.evaluate">convlab2.nlu.svm.camrest.evaluate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.camrest.html#module-convlab2.nlu.svm.camrest.nlu">convlab2.nlu.svm.camrest.nlu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.camrest.html#module-convlab2.nlu.svm.camrest.preprocess">convlab2.nlu.svm.camrest.preprocess module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.camrest.html#module-convlab2.nlu.svm.camrest">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html">convlab2.nlu.svm.multiwoz package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html#module-convlab2.nlu.svm.multiwoz.evaluate">convlab2.nlu.svm.multiwoz.evaluate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html#module-convlab2.nlu.svm.multiwoz.nlu">convlab2.nlu.svm.multiwoz.nlu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html#module-convlab2.nlu.svm.multiwoz.preprocess">convlab2.nlu.svm.multiwoz.preprocess module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.svm.multiwoz.html#module-convlab2.nlu.svm.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.nlu.svm.Classifier">
+<span id="convlab2-nlu-svm-classifier-module"></span><h2>convlab2.nlu.svm.Classifier module<a class="headerlink" href="#module-convlab2.nlu.svm.Classifier" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Classifier.SGD">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Classifier.</code><code class="sig-name descname">SGD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SGD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SGD.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SGD.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SGD.params">
+<code class="sig-name descname">params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SGD.params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SGD.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SGD.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SGD.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SGD.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Classifier.SVM">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Classifier.</code><code class="sig-name descname">SVM</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SVM.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SVM.params">
+<code class="sig-name descname">params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM.params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SVM.pickC">
+<code class="sig-name descname">pickC</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM.pickC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SVM.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.SVM.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.SVM.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Classifier.classifier">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Classifier.</code><code class="sig-name descname">classifier</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.cacheFeature">
+<code class="sig-name descname">cacheFeature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dw</span></em>, <em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.cacheFeature" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.createDictionary">
+<code class="sig-name descname">createDictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.createDictionary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.decode">
+<code class="sig-name descname">decode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.decodeToFile">
+<code class="sig-name descname">decodeToFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dw</span></em>, <em class="sig-param"><span class="n">output_fname</span></em>, <em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.decodeToFile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.decode_sent">
+<code class="sig-name descname">decode_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentinfo</span></em>, <em class="sig-param"><span class="n">output_fname</span></em>, <em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.decode_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.export">
+<code class="sig-name descname">export</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">models_fname</span></em>, <em class="sig-param"><span class="n">dictionary_fname</span></em>, <em class="sig-param"><span class="n">config_fname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.export" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.extractFeatures">
+<code class="sig-name descname">extractFeatures</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dw</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.extractFeatures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.extractFeatures2">
+<code class="sig-name descname">extractFeatures2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentinfo</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.extractFeatures2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">save_fname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Classifier.classifier.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dw</span></em>, <em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.classifier.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Classifier.toSparse">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Classifier.</code><code class="sig-name descname">toSparse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">baseX</span></em>, <em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">dictionary</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.toSparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Classifier.trainSVMwrapper">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Classifier.</code><code class="sig-name descname">trainSVMwrapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Classifier.trainSVMwrapper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm.Features">
+<span id="convlab2-nlu-svm-features-module"></span><h2>convlab2.nlu.svm.Features module<a class="headerlink" href="#module-convlab2.nlu.svm.Features" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.cnNgram">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">cnNgram</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">words</span></em>, <em class="sig-param"><span class="n">logp</span></em>, <em class="sig-param"><span class="n">delta</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnNgram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnNgram.logscore">
+<code class="sig-name descname">logscore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnNgram.logscore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnNgram.score">
+<code class="sig-name descname">score</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnNgram.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnNgram.string_repn">
+<code class="sig-name descname">string_repn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnNgram.string_repn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnNgram.word_list">
+<code class="sig-name descname">word_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnNgram.word_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Features.cn_ngram_merge">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">cn_ngram_merge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ngrams</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cn_ngram_merge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Features.cn_ngram_prune">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">cn_ngram_prune</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ngrams</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cn_ngram_prune" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Features.cn_ngram_replaced">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">cn_ngram_replaced</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ngram</span></em>, <em class="sig-param"><span class="n">searchwords</span></em>, <em class="sig-param"><span class="n">replacement</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cn_ngram_replaced" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.cnet">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">cnet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnet.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnet.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.cnet.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.cnet.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Features.get_cnngrams">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">get_cnngrams</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cnet</span></em>, <em class="sig-param"><span class="n">max_ngrams</span></em>, <em class="sig-param"><span class="n">max_length</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.get_cnngrams" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Features.get_ngrams">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">get_ngrams</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentence</span></em>, <em class="sig-param"><span class="n">max_length</span></em>, <em class="sig-param"><span class="n">skip_ngrams</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">add_tags</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.get_ngrams" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.lastSys">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">lastSys</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.lastSys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.lastSys.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.lastSys.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.lastSys.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.lastSys.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.nbest">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">nbest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbest.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbest.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbest.calculate_sent">
+<code class="sig-name descname">calculate_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbest.calculate_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbest.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbest.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.nbestLengths">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">nbestLengths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestLengths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbestLengths.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestLengths.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbestLengths.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestLengths.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.nbestScores">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">nbestScores</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestScores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbestScores.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestScores.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.nbestScores.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.nbestScores.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Features.valueIdentifying">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Features.</code><code class="sig-name descname">valueIdentifying</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.valueIdentifying" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.valueIdentifying.calculate">
+<code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.valueIdentifying.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Features.valueIdentifying.tuple_calculate">
+<code class="sig-name descname">tuple_calculate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">this_tuple</span></em>, <em class="sig-param"><span class="n">log_turn</span></em>, <em class="sig-param"><span class="n">log_input_key</span><span class="o">=</span><span class="default_value">'batch'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Features.valueIdentifying.tuple_calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm.Tuples">
+<span id="convlab2-nlu-svm-tuples-module"></span><h2>convlab2.nlu.svm.Tuples module<a class="headerlink" href="#module-convlab2.nlu.svm.Tuples" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Tuples.actual_value">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">actual_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.actual_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Tuples.genericValue">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">genericValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">slot</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.genericValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Tuples.generic_to_specific">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">generic_to_specific</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tup</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.generic_to_specific" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Tuples.is_generic">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">is_generic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.is_generic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Tuples.makes_valid_act">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">makes_valid_act</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tuples</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.makes_valid_act" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.Tuples.tuple_to_act">
+<code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">tuple_to_act</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuple_to_act" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.Tuples.tuples">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.Tuples.</code><code class="sig-name descname">tuples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Tuples.tuples.activeTuples">
+<code class="sig-name descname">activeTuples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuples.activeTuples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Tuples.tuples.activeTuples_sent">
+<code class="sig-name descname">activeTuples_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuples.activeTuples_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Tuples.tuples.distributionToNbest">
+<code class="sig-name descname">distributionToNbest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tuple_distribution</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuples.distributionToNbest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlu.svm.Tuples.tuples.uactsToTuples">
+<code class="sig-name descname">uactsToTuples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uacts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.Tuples.tuples.uactsToTuples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm.dataset_walker">
+<span id="convlab2-nlu-svm-dataset-walker-module"></span><h2>convlab2.nlu.svm.dataset_walker module<a class="headerlink" href="#module-convlab2.nlu.svm.dataset_walker" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.nlu.svm.dataset_walker.Call">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.dataset_walker.</code><code class="sig-name descname">Call</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">applog_filename</span></em>, <em class="sig-param"><span class="n">labels_filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.dataset_walker.Call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.nlu.svm.dataset_walker.dataset_walker">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.svm.dataset_walker.</code><code class="sig-name descname">dataset_walker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataListFile</span></em>, <em class="sig-param"><span class="n">labels</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dataroot</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.dataset_walker.dataset_walker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm.sutils">
+<span id="convlab2-nlu-svm-sutils-module"></span><h2>convlab2.nlu.svm.sutils module<a class="headerlink" href="#module-convlab2.nlu.svm.sutils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlu.svm.sutils.import_class">
+<code class="sig-prename descclassname">convlab2.nlu.svm.sutils.</code><code class="sig-name descname">import_class</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cl</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.sutils.import_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.sutils.powerset">
+<code class="sig-prename descclassname">convlab2.nlu.svm.sutils.</code><code class="sig-name descname">powerset</code><span class="sig-paren">(</span><em class="sig-param">[1,2,3]) --&gt; () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3</em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.sutils.powerset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.sutils.svm_to_libsvm">
+<code class="sig-prename descclassname">convlab2.nlu.svm.sutils.</code><code class="sig-name descname">svm_to_libsvm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">labels</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.sutils.svm_to_libsvm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm.train">
+<span id="convlab2-nlu-svm-train-module"></span><h2>convlab2.nlu.svm.train module<a class="headerlink" href="#module-convlab2.nlu.svm.train" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlu.svm.train.train">
+<code class="sig-prename descclassname">convlab2.nlu.svm.train.</code><code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.train.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.svm.train.usage">
+<code class="sig-prename descclassname">convlab2.nlu.svm.train.</code><code class="sig-name descname">usage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.svm.train.usage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.svm">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.nlu.svm" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

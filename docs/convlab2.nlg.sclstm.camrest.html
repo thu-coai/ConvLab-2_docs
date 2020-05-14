@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.nlg.sclstm.camrest package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.nlg.sclstm.camrest package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlg.sclstm.camrest.evaluate">convlab2.nlg.sclstm.camrest.evaluate module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlg.sclstm.camrest.sc_lstm">convlab2.nlg.sclstm.camrest.sc_lstm module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlg.sclstm.camrest.train">convlab2.nlg.sclstm.camrest.train module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlg.sclstm.camrest">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.nlg.sclstm.camrest package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.nlg.sclstm.camrest.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-nlg-sclstm-camrest-package">
+<h1>convlab2.nlg.sclstm.camrest package<a class="headerlink" href="#convlab2-nlg-sclstm-camrest-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.nlg.sclstm.camrest.evaluate">
+<span id="convlab2-nlg-sclstm-camrest-evaluate-module"></span><h2>convlab2.nlg.sclstm.camrest.evaluate module<a class="headerlink" href="#module-convlab2.nlg.sclstm.camrest.evaluate" title="Permalink to this headline">¶</a></h2>
+<p>Evaluate NLG models on utterances of Camrest test dataset
+Metric: dataset level BLEU-4, slot error rate
+Usage: python evaluate.py [usr|sys|all]</p>
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.evaluate.get_bleu4">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.evaluate.</code><code class="sig-name descname">get_bleu4</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dialog_acts</span></em>, <em class="sig-param"><span class="n">golden_utts</span></em>, <em class="sig-param"><span class="n">gen_utts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.evaluate.get_bleu4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.evaluate.get_err_slot">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.evaluate.</code><code class="sig-name descname">get_err_slot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dialog_acts</span></em>, <em class="sig-param"><span class="n">gen_slots</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.evaluate.get_err_slot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlg.sclstm.camrest.sc_lstm">
+<span id="convlab2-nlg-sclstm-camrest-sc-lstm-module"></span><h2>convlab2.nlg.sclstm.camrest.sc_lstm module<a class="headerlink" href="#module-convlab2.nlg.sclstm.camrest.sc_lstm" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.sc_lstm.</code><code class="sig-name descname">SCLSTM</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">archive_file</span><span class="o">=</span><span class="default_value">'/home/travis/build/thu-coai/ConvLab-2/convlab2/nlg/sclstm/camrest/models/nlg-sclstm-camrest.zip'</span></em>, <em class="sig-param"><span class="n">use_cuda</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">is_user</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">model_file</span><span class="o">=</span><span class="default_value">'https://convlab.blob.core.windows.net/convlab-2/nlg_sclstm_camrest.zip'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.nlg.html#convlab2.nlg.nlg.NLG" title="convlab2.nlg.nlg.NLG"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.nlg.nlg.NLG</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate">
+<code class="sig-name descname">generate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">meta</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a natural language utterance conditioned on the dialog act.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>action (list of list):</dt><dd><p>The dialog action produced by dialog policy module, which is in dialog act format.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>utterance (str):</dt><dd><p>A natural langauge utterance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate_delex">
+<code class="sig-name descname">generate_delex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dialog_acts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate_delex" title="Permalink to this definition">¶</a></dt>
+<dd><p>dialog_acts = [[intent, slot, value],…]] =&gt; meta = {“inform”: [[“area”,”centre of town”]]}</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate_slots">
+<code class="sig-name descname">generate_slots</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">meta</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.sc_lstm.SCLSTM.generate_slots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.sc_lstm.parse">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.sc_lstm.</code><code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">is_user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.sc_lstm.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlg.sclstm.camrest.train">
+<span id="convlab2-nlg-sclstm-camrest-train-module"></span><h2>convlab2.nlg.sclstm.camrest.train module<a class="headerlink" href="#module-convlab2.nlg.sclstm.camrest.train" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.evaluate">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">data_type</span></em>, <em class="sig-param"><span class="n">beam_search</span></em>, <em class="sig-param"><span class="n">beam_size</span></em>, <em class="sig-param"><span class="n">batch_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.get_slot_error">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">get_slot_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">gens</span></em>, <em class="sig-param"><span class="n">refs</span></em>, <em class="sig-param"><span class="n">sv_indexes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.get_slot_error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Args:</dt><dd><p>gens:  (batch_size, beam_size)
+refs:  (batch_size,)
+sv:    (batch_size,)</p>
+</dd>
+<dt>Returns:</dt><dd><p>count: accumulative slot error of a batch
+countPerGen: slot error for each sample</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.interact">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">interact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.interact" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.parse">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">parse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.read">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">args</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.score">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">feat</span></em>, <em class="sig-param"><span class="n">gen</span></em>, <em class="sig-param"><span class="n">template</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.score" title="Permalink to this definition">¶</a></dt>
+<dd><p>feat = [‘d-a-s-v:Booking-Book-Day-1’, ‘d-a-s-v:Booking-Book-Name-1’, ‘d-a-s-v:Booking-Book-Name-2’]
+gen = ‘xxx slot-booking-book-name xxx slot-booking-book-time’</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.str2bool">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">str2bool</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.str2bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.test">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.train">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlg.sclstm.camrest.train.train_epoch">
+<code class="sig-prename descclassname">convlab2.nlg.sclstm.camrest.train.</code><code class="sig-name descname">train_epoch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlg.sclstm.camrest.train.train_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlg.sclstm.camrest">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.nlg.sclstm.camrest" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,855 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.e2e.damd.multiwoz package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.e2e.damd.multiwoz package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.clean_dataset">convlab2.e2e.damd.multiwoz.clean_dataset module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.config">convlab2.e2e.damd.multiwoz.config module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.damd">convlab2.e2e.damd.multiwoz.damd module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.damd_net">convlab2.e2e.damd.multiwoz.damd_net module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.db_ops">convlab2.e2e.damd.multiwoz.db_ops module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.ontology">convlab2.e2e.damd.multiwoz.ontology module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.reader">convlab2.e2e.damd.multiwoz.reader module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz.utils">convlab2.e2e.damd.multiwoz.utils module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.damd.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.e2e.damd.multiwoz package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.e2e.damd.multiwoz.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-e2e-damd-multiwoz-package">
+<h1>convlab2.e2e.damd.multiwoz package<a class="headerlink" href="#convlab2-e2e-damd-multiwoz-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.clean_dataset">
+<span id="convlab2-e2e-damd-multiwoz-clean-dataset-module"></span><h2>convlab2.e2e.damd.multiwoz.clean_dataset module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.clean_dataset" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.clean_dataset.clean_slot_values">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.clean_dataset.</code><code class="sig-name descname">clean_slot_values</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">slot</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.clean_dataset.clean_slot_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.clean_dataset.clean_text">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.clean_dataset.</code><code class="sig-name descname">clean_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.clean_dataset.clean_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.clean_dataset.clean_time">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.clean_dataset.</code><code class="sig-name descname">clean_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">utter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.clean_dataset.clean_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.config">
+<span id="convlab2-e2e-damd-multiwoz-config-module"></span><h2>convlab2.e2e.damd.multiwoz.config module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.config" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.damd">
+<span id="convlab2-e2e-damd-multiwoz-damd-module"></span><h2>convlab2.e2e.damd.multiwoz.damd module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.damd" title="Permalink to this headline">¶</a></h2>
+<p>Created on Mon Mar 23 21:03:36 2020</p>
+<p>&#64;author: truthless</p>
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd.Damd">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd.</code><code class="sig-name descname">Damd</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_file</span><span class="o">=</span><span class="default_value">'https://convlab.blob.core.windows.net/convlab-2/damd_multiwoz.zip'</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'DAMD'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd.Damd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.dialog_agent.html#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.agent.Agent</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd.Damd.add_torch_input">
+<code class="sig-name descname">add_torch_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd.Damd.add_torch_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd.Damd.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd.Damd.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the class variables to prepare for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd.Damd.load_model">
+<code class="sig-name descname">load_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd.Damd.load_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd.Damd.response">
+<code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">usr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd.Damd.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response given user input.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>observation (str):</dt><dd><p>The input to the agent.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>response (str):</dt><dd><p>The response generated by the agent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.damd_net">
+<span id="convlab2-e2e-damd-multiwoz-damd-net-module"></span><h2>convlab2.e2e.damd.multiwoz.damd_net module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.damd_net" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">ActSelectionModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">length</span></em>, <em class="sig-param"><span class="n">nbest</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hiddens_batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param hiddens_batch: [B, nbest, T, H]
+:param decoded_batch: [B, nbest, T]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">ActSpanDecoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">embedding</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em>, <em class="sig-param"><span class="n">Wgen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dropout</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">bidx</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.get_probs">
+<code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">bidx</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param dec_hs: [B, Tdec, H]
+:param dec_ws: word index [B, Tdec]
+:param dec_hs: decoder hidden states [B, Tdec, H]
+:returns: [description]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.Attn">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">Attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Attn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.Attn.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em>, <em class="sig-param"><span class="n">mask</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Attn.forward" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hidden</strong> – tensor of size [n_layer, B, H]</p></li>
+<li><p><strong>encoder_outputs</strong> – tensor of size [B,T, H]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.Attn.score">
+<code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Attn.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">BeamSearchNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hiddenstate</span></em>, <em class="sig-param"><span class="n">previousNode</span></em>, <em class="sig-param"><span class="n">wordId</span></em>, <em class="sig-param"><span class="n">logProb</span></em>, <em class="sig-param"><span class="n">length</span></em>, <em class="sig-param"><span class="n">rank</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode.eval">
+<code class="sig-name descname">eval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode.print_node">
+<code class="sig-name descname">print_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeamSearchNode.print_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">BeliefSpanDecoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">embedding</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em>, <em class="sig-param"><span class="n">bspn_mode</span></em>, <em class="sig-param"><span class="n">Wgen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dropout</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param inputs: inputs dict
+:param hidden_states: hidden states dict, size [B, T, H]
+:param dec_last_w: word index of last decoding step
+:param dec_last_h: hidden state of last decoding step
+:param first_turn: [description], defaults to False
+:returns: [description]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.get_probs">
+<code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.Copy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">Copy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">copy_weight</span><span class="o">=</span><span class="default_value">1.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.Copy.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enc_out_hs</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Copy.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>get unnormalized copy score
+:param enc_out_hs: [B, Tenc,  H]
+:param dec_hs: [B, Tdec, H]   testing: Tdec=1
+:return: raw_cp_score of each position, size [B, Tdec, Tenc]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">DAMD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reader</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.RL_forward">
+<code class="sig-name descname">RL_forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">decoded</span></em>, <em class="sig-param"><span class="n">hiddens_batch</span></em>, <em class="sig-param"><span class="n">decoded_batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.RL_forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param hiddens_batch: [B, nbest, T, H]
+:param decoded_batch: [B, nbest, T]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.RL_train">
+<code class="sig-name descname">RL_train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hs</span></em>, <em class="sig-param"><span class="n">hiddens_batch</span></em>, <em class="sig-param"><span class="n">decoded_batch</span></em>, <em class="sig-param"><span class="n">first_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.RL_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param hiddens_batch: [B, nbest, T, H]
+:param decoded_batch: [B, nbest, T]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.addActSelection">
+<code class="sig-name descname">addActSelection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.addActSelection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.aspn_selection">
+<code class="sig-name descname">aspn_selection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">decoded</span></em>, <em class="sig-param"><span class="n">hiddens_batch</span></em>, <em class="sig-param"><span class="n">decoded_batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.aspn_selection" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param hiddens_batch: [B, nbest, T, H]
+:param decoded_batch: [B, nbest, T]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.beam_decode">
+<code class="sig-name descname">beam_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">init_hidden</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">decoded</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.beam_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.greedy_decode">
+<code class="sig-name descname">greedy_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">init_hidden</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">decoded</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.greedy_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.sampling_decode">
+<code class="sig-name descname">sampling_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">init_hidden</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">decoded</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.sampling_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.supervised_loss">
+<code class="sig-name descname">supervised_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">probs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.supervised_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.test_forward">
+<code class="sig-name descname">test_forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hs</span></em>, <em class="sig-param"><span class="n">first_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.test_forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.train_forward">
+<code class="sig-name descname">train_forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">first_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.train_forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute required outputs for a single dialogue turn. Turn state{Dict} will be updated in each call.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">DomainSpanDecoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">embedding</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em>, <em class="sig-param"><span class="n">Wgen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dropout</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.get_probs">
+<code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">LayerNormalization</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">0.001</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Layer normalization module</p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">MultiLayerGRUwithLN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_size</span></em>, <em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">layer_num</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">bidirec</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">layer_norm</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">skip_connect</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dropout</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>multi-layer GRU with layer normalization</p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inputs</strong> – tensor of size [B, T, H]</p></li>
+<li><p><strong>hidden</strong> – tensor of size [n_layer*bi-direc,B,H]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>in_l: tensor of size [B, T, H * bi-direc]
+hs: tensor of size [n_layer * bi-direc,B,H]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">ResponseDecoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">embedding</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em>, <em class="sig-param"><span class="n">Wgen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dropout</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.get_probs">
+<code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]
+:param dec_hs: [B, Tdec, H]
+:param dec_ws: word index [B, Tdec]
+:param dec_hs: decoder hidden states [B, Tdec, H]
+:returns: [description]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">biGRUencoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">embedding</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_seqs</span></em>, <em class="sig-param"><span class="n">hidden</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>forward procedure. No need for inputs to be sorted
+:param input_seqs: Variable of [B,T]
+:param hidden:
+:return: outputs [B,T,H], hidden [n_layer*bi-direc,B,H]</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.cuda_">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">cuda_</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">var</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.cuda_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.get_final_scores">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">get_final_scores</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_scores</span></em>, <em class="sig-param"><span class="n">word_onehot_input</span></em>, <em class="sig-param"><span class="n">input_idx_oov</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.get_final_scores" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>raw_scores</strong> – list of tensor of size [B, Tdec, V], [B, Tdec, Tenc1], [B, Tdec, Tenc1] …</p></li>
+<li><p><strong>word_onehot_input</strong> – list of nparray of size [B, Tenci, V+Tenci]</p></li>
+<li><p><strong>input_idx_oov</strong> – list of nparray of size [B, Tenc]</p></li>
+<li><p><strong>vocab_size_oov</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>tensor of size [B, Tdec, vocab_size_oov]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.get_one_hot_input">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">get_one_hot_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_input_np</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.get_one_hot_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>sparse input of
+:param x_input_np: [B, Tenc]
+:return: tensor: [B,Tenc, V+Tenc]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.init_gru">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">init_gru</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gru</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.init_gru" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.label_smoothing">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">label_smoothing</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">labels</span></em>, <em class="sig-param"><span class="n">smoothing_rate</span></em>, <em class="sig-param"><span class="n">vocab_size_oov</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.label_smoothing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.damd_net.update_input">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.damd_net.</code><code class="sig-name descname">update_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">inputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.update_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.db_ops">
+<span id="convlab2-e2e-damd-multiwoz-db-ops-module"></span><h2>convlab2.e2e.damd.multiwoz.db_ops module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.db_ops" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.db_ops.</code><code class="sig-name descname">MultiWozDB</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dir</span></em>, <em class="sig-param"><span class="n">db_paths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.addBookingPointer">
+<code class="sig-name descname">addBookingPointer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">constraint</span></em>, <em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">book_state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.addBookingPointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add information about availability of the booking option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.addDBPointer">
+<code class="sig-name descname">addDBPointer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">match_num</span></em>, <em class="sig-param"><span class="n">return_num</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.addDBPointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create database pointer for all related domains.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.get_match_num">
+<code class="sig-name descname">get_match_num</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">constraints</span></em>, <em class="sig-param"><span class="n">return_entry</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.get_match_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create database pointer for all related domains.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.oneHotVector">
+<code class="sig-name descname">oneHotVector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.oneHotVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of available entities for particular domain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.pointerBack">
+<code class="sig-name descname">pointerBack</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.pointerBack" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.queryJsons">
+<code class="sig-name descname">queryJsons</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">constraints</span></em>, <em class="sig-param"><span class="n">exactly_match</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">return_name</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.db_ops.MultiWozDB.queryJsons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of entities for a given domain
+based on the annotation of the belief state
+constraints: dict e.g. {‘pricerange’: ‘cheap’, ‘area’: ‘west’}</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.ontology">
+<span id="convlab2-e2e-damd-multiwoz-ontology-module"></span><h2>convlab2.e2e.damd.multiwoz.ontology module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.ontology" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.reader">
+<span id="convlab2-e2e-damd-multiwoz-reader-module"></span><h2>convlab2.e2e.damd.multiwoz.reader module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.reader" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.reader.</code><code class="sig-name descname">MultiWozReader</code><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.aspan_to_act_list">
+<code class="sig-name descname">aspan_to_act_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">aspan</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.aspan_to_act_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.bspan_to_DBpointer">
+<code class="sig-name descname">bspan_to_DBpointer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bspan</span></em>, <em class="sig-param"><span class="n">turn_domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.bspan_to_DBpointer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.bspan_to_constraint_dict">
+<code class="sig-name descname">bspan_to_constraint_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bspan</span></em>, <em class="sig-param"><span class="n">bspn_mode</span><span class="o">=</span><span class="default_value">'bspn'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.bspan_to_constraint_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.delex_by_valdict">
+<code class="sig-name descname">delex_by_valdict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.delex_by_valdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.dspan_to_domain">
+<code class="sig-name descname">dspan_to_domain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspan</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.dspan_to_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.prepare_input_np">
+<code class="sig-name descname">prepare_input_np</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u</span></em>, <em class="sig-param"><span class="n">u_delex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.prepare_input_np" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.preprocess_utterance">
+<code class="sig-name descname">preprocess_utterance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.preprocess_utterance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.restore">
+<code class="sig-name descname">restore</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">resp</span></em>, <em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">constraint_dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.restore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.reader.MultiWozReader.wrap_result">
+<code class="sig-name descname">wrap_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_dict</span></em>, <em class="sig-param"><span class="n">eos_syntax</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.reader.MultiWozReader.wrap_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz.utils">
+<span id="convlab2-e2e-damd-multiwoz-utils-module"></span><h2>convlab2.e2e.damd.multiwoz.utils module<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">Vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab_size</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.add_word">
+<code class="sig-name descname">add_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.add_word" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.construct">
+<code class="sig-name descname">construct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.construct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.decode">
+<code class="sig-name descname">decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em>, <em class="sig-param"><span class="n">indicate_oov</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.encode">
+<code class="sig-name descname">encode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em>, <em class="sig-param"><span class="n">include_oov</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.has_word">
+<code class="sig-name descname">has_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.has_word" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.load_vocab">
+<code class="sig-name descname">load_vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.load_vocab" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.nl_decode">
+<code class="sig-name descname">nl_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">l</span></em>, <em class="sig-param"><span class="n">eos</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.nl_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.oov_idx_map">
+<code class="sig-name descname">oov_idx_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.oov_idx_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.save_vocab">
+<code class="sig-name descname">save_vocab</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vocab_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.save_vocab" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_decode">
+<code class="sig-name descname">sentence_decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index_list</span></em>, <em class="sig-param"><span class="n">eos</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">indicate_oov</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_encode">
+<code class="sig-name descname">sentence_encode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_oov_map">
+<code class="sig-name descname">sentence_oov_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.Vocab.sentence_oov_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.f1_score">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">f1_score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_list</span></em>, <em class="sig-param"><span class="n">pred_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.f1_score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.get_glove_matrix">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">get_glove_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">glove_path</span></em>, <em class="sig-param"><span class="n">vocab</span></em>, <em class="sig-param"><span class="n">initial_embedding_np</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.get_glove_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a glove embedding matrix
+:param self:
+:param glove_file:
+:param initial_embedding_np:
+:return: np array of [V,E]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.padSeqs">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">padSeqs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sequences</span></em>, <em class="sig-param"><span class="n">maxlen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">truncated</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">pad_method</span><span class="o">=</span><span class="default_value">'post'</span></em>, <em class="sig-param"><span class="n">trunc_method</span><span class="o">=</span><span class="default_value">'pre'</span></em>, <em class="sig-param"><span class="n">dtype</span><span class="o">=</span><span class="default_value">'int32'</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.padSeqs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.position_encoding_init">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">position_encoding_init</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">n_position</span></em>, <em class="sig-param"><span class="n">d_pos_vec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.position_encoding_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.py2np">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">py2np</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.py2np" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.damd.multiwoz.utils.write_dict">
+<code class="sig-prename descclassname">convlab2.e2e.damd.multiwoz.utils.</code><code class="sig-name descname">write_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fn</span></em>, <em class="sig-param"><span class="n">dic</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.utils.write_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.damd.multiwoz">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.e2e.damd.multiwoz" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

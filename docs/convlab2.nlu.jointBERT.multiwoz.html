@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.nlu.jointBERT.multiwoz package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.nlu.jointBERT.multiwoz package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.jointBERT.multiwoz.nlu">convlab2.nlu.jointBERT.multiwoz.nlu module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.jointBERT.multiwoz.postprocess">convlab2.nlu.jointBERT.multiwoz.postprocess module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.jointBERT.multiwoz.preprocess">convlab2.nlu.jointBERT.multiwoz.preprocess module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.jointBERT.multiwoz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.nlu.jointBERT.multiwoz package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.nlu.jointBERT.multiwoz.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-nlu-jointbert-multiwoz-package">
+<h1>convlab2.nlu.jointBERT.multiwoz package<a class="headerlink" href="#convlab2-nlu-jointbert-multiwoz-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.nlu.jointBERT.multiwoz.nlu">
+<span id="convlab2-nlu-jointbert-multiwoz-nlu-module"></span><h2>convlab2.nlu.jointBERT.multiwoz.nlu module<a class="headerlink" href="#module-convlab2.nlu.jointBERT.multiwoz.nlu" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.nlu.jointBERT.multiwoz.nlu.BERTNLU">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.nlu.</code><code class="sig-name descname">BERTNLU</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'all'</span></em>, <em class="sig-param"><span class="n">config_file</span><span class="o">=</span><span class="default_value">'multiwoz_all_context.json'</span></em>, <em class="sig-param"><span class="n">model_file</span><span class="o">=</span><span class="default_value">'https://convlab.blob.core.windows.net/convlab-2/bert_multiwoz_all_context.zip'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.nlu.BERTNLU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.nlu.html#convlab2.nlu.nlu.NLU" title="convlab2.nlu.nlu.NLU"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.nlu.nlu.NLU</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.nlu.jointBERT.multiwoz.nlu.BERTNLU.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">utterance</span></em>, <em class="sig-param"><span class="n">context</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.nlu.BERTNLU.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict the dialog act of a natural language utterance.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>utterance (str):</dt><dd><p>A natural language utterance.</p>
+</dd>
+<dt>context (list of str):</dt><dd><p>Previous utterances.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>action (list of list):</dt><dd><p>The dialog act of utterance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.jointBERT.multiwoz.postprocess">
+<span id="convlab2-nlu-jointbert-multiwoz-postprocess-module"></span><h2>convlab2.nlu.jointBERT.multiwoz.postprocess module<a class="headerlink" href="#module-convlab2.nlu.jointBERT.multiwoz.postprocess" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.postprocess.calculateF1">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.postprocess.</code><code class="sig-name descname">calculateF1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">predict_golden</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.postprocess.calculateF1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.postprocess.intent2triples">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.postprocess.</code><code class="sig-name descname">intent2triples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">intent_seq</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.postprocess.intent2triples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.postprocess.is_slot_da">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.postprocess.</code><code class="sig-name descname">is_slot_da</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">da</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.postprocess.is_slot_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.postprocess.recover_intent">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.postprocess.</code><code class="sig-name descname">recover_intent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataloader</span></em>, <em class="sig-param"><span class="n">intent_logits</span></em>, <em class="sig-param"><span class="n">tag_logits</span></em>, <em class="sig-param"><span class="n">tag_mask_tensor</span></em>, <em class="sig-param"><span class="n">ori_word_seq</span></em>, <em class="sig-param"><span class="n">new2ori</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.postprocess.recover_intent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.postprocess.tag2triples">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.postprocess.</code><code class="sig-name descname">tag2triples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_seq</span></em>, <em class="sig-param"><span class="n">tag_seq</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.postprocess.tag2triples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.jointBERT.multiwoz.preprocess">
+<span id="convlab2-nlu-jointbert-multiwoz-preprocess-module"></span><h2>convlab2.nlu.jointBERT.multiwoz.preprocess module<a class="headerlink" href="#module-convlab2.nlu.jointBERT.multiwoz.preprocess" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.preprocess.da2triples">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.preprocess.</code><code class="sig-name descname">da2triples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dialog_act</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.preprocess.da2triples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.preprocess.preprocess">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.preprocess.</code><code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.preprocess.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.jointBERT.multiwoz.preprocess.read_zipped_json">
+<code class="sig-prename descclassname">convlab2.nlu.jointBERT.multiwoz.preprocess.</code><code class="sig-name descname">read_zipped_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.jointBERT.multiwoz.preprocess.read_zipped_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.nlu.jointBERT.multiwoz">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.nlu.jointBERT.multiwoz" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

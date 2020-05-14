@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.dialog_agent package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.dialog_agent package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.dialog_agent.agent">convlab2.dialog_agent.agent module</a></li>
+<li><a class="reference internal" href="#module-convlab2.dialog_agent.env">convlab2.dialog_agent.env module</a></li>
+<li><a class="reference internal" href="#module-convlab2.dialog_agent.session">convlab2.dialog_agent.session module</a></li>
+<li><a class="reference internal" href="#module-convlab2.dialog_agent">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.dialog_agent package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.dialog_agent.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-dialog-agent-package">
+<h1>convlab2.dialog_agent package<a class="headerlink" href="#convlab2-dialog-agent-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.dialog_agent.agent">
+<span id="convlab2-dialog-agent-agent-module"></span><h2>convlab2.dialog_agent.agent module<a class="headerlink" href="#module-convlab2.dialog_agent.agent" title="Permalink to this headline">¶</a></h2>
+<p>Dialog agent interface and classes.</p>
+<dl class="py class">
+<dt id="convlab2.dialog_agent.agent.Agent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.agent.</code><code class="sig-name descname">Agent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.Agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Interface for dialog agent classes.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.Agent.init_session">
+<em class="property">abstract </em><code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.Agent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the class variables to prepare for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.Agent.response">
+<em class="property">abstract </em><code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.Agent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response given user input.</p>
+<p>The data type of input and response can be either str or list of tuples, condition on the form of agent.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>If the agent is a pipeline agent with NLU, DST and Policy, then type(input) == str and
+type(response) == list of tuples.</p>
+</dd>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>observation (str or list of tuples):</dt><dd><p>The input to the agent.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>response (str or list of tuples):</dt><dd><p>The response generated by the agent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.agent.</code><code class="sig-name descname">PipelineAgent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nlu</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.nlu.html#convlab2.nlu.nlu.NLU" title="convlab2.nlu.nlu.NLU">convlab2.nlu.nlu.NLU</a></span></em>, <em class="sig-param"><span class="n">dst</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.dst.html#convlab2.dst.dst.DST" title="convlab2.dst.dst.DST">convlab2.dst.dst.DST</a></span></em>, <em class="sig-param"><span class="n">policy</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.policy.html#convlab2.policy.policy.Policy" title="convlab2.policy.policy.Policy">convlab2.policy.policy.Policy</a></span></em>, <em class="sig-param"><span class="n">nlg</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.nlg.html#convlab2.nlg.nlg.NLG" title="convlab2.nlg.nlg.NLG">convlab2.nlg.nlg.NLG</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.agent.Agent</span></code></a></p>
+<p>Pipeline dialog agent base class, including NLU, DST, Policy and NLG.</p>
+<p>The combination modes of pipeline agent modules are flexible. The only thing you have to make sure is that
+the API of agents are matched.</p>
+<dl>
+<dt>Example:</dt><dd><p>If agent A is (nlu, tracker, policy), then the agent B should be like (tracker, policy, nlg) to ensure API
+matching.</p>
+</dd>
+<dt>The valid module combinations are as follows:</dt><dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 25%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>NLU</p></th>
+<th class="head"><p>DST</p></th>
+<th class="head"><p>Policy</p></th>
+<th class="head"><p>NLG</p></th>
+<th class="head"><p>In</p></th>
+<th class="head"><p>Out</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>nl</p></td>
+<td><p>nl</p></td>
+</tr>
+<tr class="row-odd"><td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>da</p></td>
+<td><p>nl</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>da</p></td>
+<td><p>da</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>nl</p></td>
+<td><p>da</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>da</p></td>
+<td><p>da</p></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.get_in_da">
+<code class="sig-name descname">get_in_da</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.get_in_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.get_out_da">
+<code class="sig-name descname">get_out_da</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.get_out_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.get_reward">
+<code class="sig-name descname">get_reward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.get_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the attributes of DST and Policy module.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.is_terminated">
+<code class="sig-name descname">is_terminated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.is_terminated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.response">
+<code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response using the agent modules.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.dialog_agent.env">
+<span id="convlab2-dialog-agent-env-module"></span><h2>convlab2.dialog_agent.env module<a class="headerlink" href="#module-convlab2.dialog_agent.env" title="Permalink to this headline">¶</a></h2>
+<p>Created on Wed Jul 17 14:27:34 2019</p>
+<p>&#64;author: truthless</p>
+<dl class="py class">
+<dt id="convlab2.dialog_agent.env.Environment">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.env.</code><code class="sig-name descname">Environment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sys_nlg</span></em>, <em class="sig-param"><span class="n">usr</span></em>, <em class="sig-param"><span class="n">sys_nlu</span></em>, <em class="sig-param"><span class="n">sys_dst</span></em>, <em class="sig-param"><span class="n">evaluator</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.env.Environment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.env.Environment.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.env.Environment.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.env.Environment.step">
+<code class="sig-name descname">step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.env.Environment.step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.dialog_agent.session">
+<span id="convlab2-dialog-agent-session-module"></span><h2>convlab2.dialog_agent.session module<a class="headerlink" href="#module-convlab2.dialog_agent.session" title="Permalink to this headline">¶</a></h2>
+<p>Dialog controller classes.</p>
+<dl class="py class">
+<dt id="convlab2.dialog_agent.session.BiSession">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.session.</code><code class="sig-name descname">BiSession</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sys_agent</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent">convlab2.dialog_agent.agent.Agent</a></span></em>, <em class="sig-param"><span class="n">user_agent</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent">convlab2.dialog_agent.agent.Agent</a></span></em>, <em class="sig-param"><span class="n">kb_query</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">evaluator</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.session.Session" title="convlab2.dialog_agent.session.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.session.Session</span></code></a></p>
+<p>The dialog controller which aggregates several agents to conduct a complete dialog session.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>sys_agent (Agent):</dt><dd><p>system dialog agent.</p>
+</dd>
+<dt>user_agent (Agent):</dt><dd><p>user dialog agent.</p>
+</dd>
+<dt>kb_query (KBquery):</dt><dd><p>knowledge base query tool.</p>
+</dd>
+<dt>dialog_history (list):</dt><dd><p>The dialog history, formatted as [[user_uttr1, sys_uttr1], [user_uttr2, sys_uttr2], …]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.BiSession.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.BiSession.next_agent">
+<code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user and system agent response in turn.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.BiSession.next_response">
+<code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.BiSession.next_turn">
+<code class="sig-name descname">next_turn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">last_observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession.next_turn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conduct a new turn of dialog, which consists of the system response and user response.</p>
+<p>The variable type of responses can be either 1) str or 2) dialog act, depends on the dialog mode settings of the
+two agents which are supposed to be the same.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>last_observation:</dt><dd><p>Last agent response.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>sys_response:</dt><dd><p>The response of system.</p>
+</dd>
+<dt>user_response:</dt><dd><p>The response of user simulator.</p>
+</dd>
+<dt>session_over (boolean):</dt><dd><p>True if session ends, else session continues.</p>
+</dd>
+<dt>reward (float):</dt><dd><p>The reward given by the user.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.BiSession.train_policy">
+<code class="sig-name descname">train_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.BiSession.train_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the parameters of system agent policy.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.session.DealornotSession">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.session.</code><code class="sig-name descname">DealornotSession</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alice</span></em>, <em class="sig-param"><span class="n">bob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.session.Session" title="convlab2.dialog_agent.session.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.session.Session</span></code></a></p>
+<p>A special session for Deal or Not dataset, which is a object dividing negotiation task.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.DealornotSession.get_rewards">
+<code class="sig-name descname">get_rewards</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession.get_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the rewards of alice and bob.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>reward_1 (float):</dt><dd><p>Reward of Alice.</p>
+</dd>
+<dt>reward_2 (float):</dt><dd><p>Reward of Bob.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.DealornotSession.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.DealornotSession.is_terminated">
+<code class="sig-name descname">is_terminated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession.is_terminated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.DealornotSession.next_agent">
+<code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alice and Bob agents response in turn.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.DealornotSession.next_response">
+<code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.DealornotSession.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.session.Session">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.session.</code><code class="sig-name descname">Session</code><a class="headerlink" href="#convlab2.dialog_agent.session.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Base dialog session controller, which manages the agents to conduct a complete dialog session.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.Session.init_session">
+<em class="property">abstract </em><code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.Session.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.Session.next_agent">
+<em class="property">abstract </em><code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.Session.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decide the next agent to generate a response.</p>
+<p>In this base class, this function returns the index randomly.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>next_agent (Agent): The index of the next agent.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.session.Session.next_response">
+<em class="property">abstract </em><code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.session.Session.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.dialog_agent">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.dialog_agent" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.dialog_agent.Agent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.</code><code class="sig-name descname">Agent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Interface for dialog agent classes.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.Agent.init_session">
+<em class="property">abstract </em><code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Agent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the class variables to prepare for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.Agent.response">
+<em class="property">abstract </em><code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Agent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response given user input.</p>
+<p>The data type of input and response can be either str or list of tuples, condition on the form of agent.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>If the agent is a pipeline agent with NLU, DST and Policy, then type(input) == str and
+type(response) == list of tuples.</p>
+</dd>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>observation (str or list of tuples):</dt><dd><p>The input to the agent.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>response (str or list of tuples):</dt><dd><p>The response generated by the agent.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.PipelineAgent">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.</code><code class="sig-name descname">PipelineAgent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nlu</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.nlu.html#convlab2.nlu.nlu.NLU" title="convlab2.nlu.nlu.NLU">convlab2.nlu.nlu.NLU</a></span></em>, <em class="sig-param"><span class="n">dst</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.dst.html#convlab2.dst.dst.DST" title="convlab2.dst.dst.DST">convlab2.dst.dst.DST</a></span></em>, <em class="sig-param"><span class="n">policy</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.policy.html#convlab2.policy.policy.Policy" title="convlab2.policy.policy.Policy">convlab2.policy.policy.Policy</a></span></em>, <em class="sig-param"><span class="n">nlg</span><span class="p">:</span> <span class="n"><a class="reference internal" href="convlab2.nlg.html#convlab2.nlg.nlg.NLG" title="convlab2.nlg.nlg.NLG">convlab2.nlg.nlg.NLG</a></span></em>, <em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.agent.Agent</span></code></a></p>
+<p>Pipeline dialog agent base class, including NLU, DST, Policy and NLG.</p>
+<p>The combination modes of pipeline agent modules are flexible. The only thing you have to make sure is that
+the API of agents are matched.</p>
+<dl>
+<dt>Example:</dt><dd><p>If agent A is (nlu, tracker, policy), then the agent B should be like (tracker, policy, nlg) to ensure API
+matching.</p>
+</dd>
+<dt>The valid module combinations are as follows:</dt><dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 25%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>NLU</p></th>
+<th class="head"><p>DST</p></th>
+<th class="head"><p>Policy</p></th>
+<th class="head"><p>NLG</p></th>
+<th class="head"><p>In</p></th>
+<th class="head"><p>Out</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>nl</p></td>
+<td><p>nl</p></td>
+</tr>
+<tr class="row-odd"><td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>da</p></td>
+<td><p>nl</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>da</p></td>
+<td><p>da</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>nl</p></td>
+<td><p>da</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>o</p></td>
+<td><p>+</p></td>
+<td><p>o</p></td>
+<td><p>da</p></td>
+<td><p>da</p></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.get_in_da">
+<code class="sig-name descname">get_in_da</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.get_in_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.get_out_da">
+<code class="sig-name descname">get_out_da</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.get_out_da" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.get_reward">
+<code class="sig-name descname">get_reward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.get_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the attributes of DST and Policy module.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.is_terminated">
+<code class="sig-name descname">is_terminated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.is_terminated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.response">
+<code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate agent response using the agent modules.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.Session">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.</code><code class="sig-name descname">Session</code><a class="headerlink" href="#convlab2.dialog_agent.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Base dialog session controller, which manages the agents to conduct a complete dialog session.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.Session.init_session">
+<em class="property">abstract </em><code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Session.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.Session.next_agent">
+<em class="property">abstract </em><code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Session.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decide the next agent to generate a response.</p>
+<p>In this base class, this function returns the index randomly.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>next_agent (Agent): The index of the next agent.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.Session.next_response">
+<em class="property">abstract </em><code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.Session.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.BiSession">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.</code><code class="sig-name descname">BiSession</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sys_agent</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent">convlab2.dialog_agent.agent.Agent</a></span></em>, <em class="sig-param"><span class="n">user_agent</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#convlab2.dialog_agent.agent.Agent" title="convlab2.dialog_agent.agent.Agent">convlab2.dialog_agent.agent.Agent</a></span></em>, <em class="sig-param"><span class="n">kb_query</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">evaluator</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.session.Session" title="convlab2.dialog_agent.session.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.session.Session</span></code></a></p>
+<p>The dialog controller which aggregates several agents to conduct a complete dialog session.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>sys_agent (Agent):</dt><dd><p>system dialog agent.</p>
+</dd>
+<dt>user_agent (Agent):</dt><dd><p>user dialog agent.</p>
+</dd>
+<dt>kb_query (KBquery):</dt><dd><p>knowledge base query tool.</p>
+</dd>
+<dt>dialog_history (list):</dt><dd><p>The dialog history, formatted as [[user_uttr1, sys_uttr1], [user_uttr2, sys_uttr2], …]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.BiSession.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.BiSession.next_agent">
+<code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user and system agent response in turn.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.BiSession.next_response">
+<code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.BiSession.next_turn">
+<code class="sig-name descname">next_turn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">last_observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession.next_turn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conduct a new turn of dialog, which consists of the system response and user response.</p>
+<p>The variable type of responses can be either 1) str or 2) dialog act, depends on the dialog mode settings of the
+two agents which are supposed to be the same.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>last_observation:</dt><dd><p>Last agent response.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>sys_response:</dt><dd><p>The response of system.</p>
+</dd>
+<dt>user_response:</dt><dd><p>The response of user simulator.</p>
+</dd>
+<dt>session_over (boolean):</dt><dd><p>True if session ends, else session continues.</p>
+</dd>
+<dt>reward (float):</dt><dd><p>The reward given by the user.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.BiSession.train_policy">
+<code class="sig-name descname">train_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.BiSession.train_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the parameters of system agent policy.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.dialog_agent.DealornotSession">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.dialog_agent.</code><code class="sig-name descname">DealornotSession</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alice</span></em>, <em class="sig-param"><span class="n">bob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.dialog_agent.session.Session" title="convlab2.dialog_agent.session.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.dialog_agent.session.Session</span></code></a></p>
+<p>A special session for Deal or Not dataset, which is a object dividing negotiation task.</p>
+<dl class="py method">
+<dt id="convlab2.dialog_agent.DealornotSession.get_rewards">
+<code class="sig-name descname">get_rewards</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession.get_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the rewards of alice and bob.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>reward_1 (float):</dt><dd><p>Reward of Alice.</p>
+</dd>
+<dt>reward_2 (float):</dt><dd><p>Reward of Bob.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.DealornotSession.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the agent variables for a new session.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.DealornotSession.is_terminated">
+<code class="sig-name descname">is_terminated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession.is_terminated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.DealornotSession.next_agent">
+<code class="sig-name descname">next_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession.next_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alice and Bob agents response in turn.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.DealornotSession.next_response">
+<code class="sig-name descname">next_response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.DealornotSession.next_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generated the next response.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observation (str or dict): The agent observation of next agent.</p>
+</dd>
+<dt>Returns:</dt><dd><p>response (str or dict): The agent’s response.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

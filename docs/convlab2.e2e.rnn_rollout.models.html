@@ -1,0 +1,1168 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>convlab2.e2e.rnn_rollout.models package &mdash; ConvLab-2 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ConvLab-2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">convlab2.e2e.rnn_rollout.models package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.attn">convlab2.e2e.rnn_rollout.models.attn module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.ctx_encoder">convlab2.e2e.rnn_rollout.models.ctx_encoder module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.latent_clustering_model">convlab2.e2e.rnn_rollout.models.latent_clustering_model module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.modules">convlab2.e2e.rnn_rollout.models.modules module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.rnn_model">convlab2.e2e.rnn_rollout.models.rnn_model module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.selection_model">convlab2.e2e.rnn_rollout.models.selection_model module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models.utils">convlab2.e2e.rnn_rollout.models.utils module</a></li>
+<li><a class="reference internal" href="#module-convlab2.e2e.rnn_rollout.models">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ConvLab-2</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>convlab2.e2e.rnn_rollout.models package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/convlab2.e2e.rnn_rollout.models.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="convlab2-e2e-rnn-rollout-models-package">
+<h1>convlab2.e2e.rnn_rollout.models package<a class="headerlink" href="#convlab2-e2e-rnn-rollout-models-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.attn">
+<span id="convlab2-e2e-rnn-rollout-models-attn-module"></span><h2>convlab2.e2e.rnn_rollout.models.attn module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.attn" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.Attention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">Attention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.Attention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.Attention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q</span></em>, <em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">mask</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.Attention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.Attention.forward_attn">
+<code class="sig-name descname">forward_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.Attention.forward_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">BiRnnAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">dropout</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention" title="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_inpts</span></em>, <em class="sig-param"><span class="n">fwd_lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward_attn">
+<code class="sig-name descname">forward_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_hs</span></em>, <em class="sig-param"><span class="n">bwd_hs</span></em>, <em class="sig-param"><span class="n">lens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward_rnn">
+<code class="sig-name descname">forward_rnn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.BiRnnAttention.forward_rnn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">ChunkedAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.make_mask">
+<code class="sig-name descname">make_mask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fwd_hs</span></em>, <em class="sig-param"><span class="n">lens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.make_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fwd_inpts</span></em>, <em class="sig-param"><span class="n">fwd_lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.zero_h">
+<code class="sig-name descname">zero_h</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention.zero_h" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">HierarchicalAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">dropout</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention" title="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_inpts</span></em>, <em class="sig-param"><span class="n">fwd_lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_sent_attn">
+<code class="sig-name descname">forward_sent_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">word_hs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_sent_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_word_attn">
+<code class="sig-name descname">forward_word_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_word_hs</span></em>, <em class="sig-param"><span class="n">bwd_word_hs</span></em>, <em class="sig-param"><span class="n">ln</span></em>, <em class="sig-param"><span class="n">rev_idx</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_word_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_word_rnn">
+<code class="sig-name descname">forward_word_rnn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.HierarchicalAttention.forward_word_rnn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">KeyValueAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">key_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">mask</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention.forward_attn">
+<code class="sig-name descname">forward_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.KeyValueAttention.forward_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.MaskedAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">MaskedAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.MaskedAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.MaskedAttention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q</span></em>, <em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">ln</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.MaskedAttention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.MaskedAttention.make_mask">
+<code class="sig-name descname">make_mask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">ln</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.MaskedAttention.make_mask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.SentenceAttention">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.attn.</code><code class="sig-name descname">SentenceAttention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hid_size</span></em>, <em class="sig-param"><span class="n">dropout</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.SentenceAttention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention" title="convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.models.attn.ChunkedAttention</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_inpt</span></em>, <em class="sig-param"><span class="n">fwd_len</span></em>, <em class="sig-param"><span class="n">rev_idx</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward_word_attn">
+<code class="sig-name descname">forward_word_attn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">fwd_word_hs</span></em>, <em class="sig-param"><span class="n">bwd_word_hs</span></em>, <em class="sig-param"><span class="n">ln</span></em>, <em class="sig-param"><span class="n">rev_idx</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward_word_attn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward_word_rnn">
+<code class="sig-name descname">forward_word_rnn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.attn.SentenceAttention.forward_word_rnn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.ctx_encoder">
+<span id="convlab2-e2e-rnn-rollout-models-ctx-encoder-module"></span><h2>convlab2.e2e.rnn_rollout.models.ctx_encoder module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.ctx_encoder" title="Permalink to this headline">¶</a></h2>
+<p>Set of context encoders.</p>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.ctx_encoder.MlpContextEncoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.ctx_encoder.</code><code class="sig-name descname">MlpContextEncoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">nembed</span></em>, <em class="sig-param"><span class="n">nhid</span></em>, <em class="sig-param"><span class="n">dropout</span></em>, <em class="sig-param"><span class="n">init_range</span></em>, <em class="sig-param"><span class="n">skip_values</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.ctx_encoder.MlpContextEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Simple encoder for the dialogue context. Encoder counts and values via MLP.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.ctx_encoder.MlpContextEncoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.ctx_encoder.MlpContextEncoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.latent_clustering_model">
+<span id="convlab2-e2e-rnn-rollout-models-latent-clustering-model-module"></span><h2>convlab2.e2e.rnn_rollout.models.latent_clustering_model module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.latent_clustering_model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">BaselineClusteringModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="convlab2.e2e.rnn_rollout.data.SentenceCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.SentenceCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.decode_sentence">
+<code class="sig-name descname">decode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">cond_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.decode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.embed_sentence">
+<code class="sig-name descname">embed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.embed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.BaselineClusteringEngine" title="convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.BaselineClusteringEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.BaselineClusteringEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_decoder">
+<code class="sig-name descname">forward_decoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">cond_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_decoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_encoder">
+<code class="sig-name descname">forward_encoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_encoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_marginal_loss">
+<code class="sig-name descname">forward_marginal_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p_z</span></em>, <em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">tgt</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_marginal_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_memory">
+<code class="sig-name descname">forward_memory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mem_h</span></em>, <em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.forward_memory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.init_memory">
+<code class="sig-name descname">init_memory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.init_memory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">mem_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.unembed_sentence">
+<code class="sig-name descname">unembed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dec_hs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.unembed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.word2var">
+<code class="sig-name descname">word2var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.word2var" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cond_h</span></em>, <em class="sig-param"><span class="n">max_words</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">start_token</span><span class="o">=</span><span class="default_value">'YOU:'</span></em>, <em class="sig-param"><span class="n">stop_tokens</span><span class="o">=</span><span class="default_value">['&lt;eos&gt;', '&lt;selection&gt;']</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.BaselineClusteringModel.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">LatentClusteringLanguageModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="convlab2.e2e.rnn_rollout.data.SentenceCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.SentenceCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.decode_sentence">
+<code class="sig-name descname">decode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">cond_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.decode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.embed_sentence">
+<code class="sig-name descname">embed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.embed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.encode_sentence">
+<code class="sig-name descname">encode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em>, <em class="sig-param"><span class="n">enc_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.encode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringLanguageEngine" title="convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringLanguageEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringLanguageEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">sel_tgt_probs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward_decoder">
+<code class="sig-name descname">forward_decoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">cond_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward_decoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward_encoder">
+<code class="sig-name descname">forward_encoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em>, <em class="sig-param"><span class="n">enc_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.forward_encoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.unembed_sentence">
+<code class="sig-name descname">unembed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dec_hs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.unembed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.word2var">
+<code class="sig-name descname">word2var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.word2var" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cond_h</span></em>, <em class="sig-param"><span class="n">max_words</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">start_token</span><span class="o">=</span><span class="default_value">'YOU:'</span></em>, <em class="sig-param"><span class="n">stop_tokens</span><span class="o">=</span><span class="default_value">['&lt;eos&gt;', '&lt;selection&gt;']</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.zero_grad">
+<code class="sig-name descname">zero_grad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringLanguageModel.zero_grad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets gradients of all model parameters to zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">LatentClusteringModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="convlab2.e2e.rnn_rollout.data.SentenceCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.SentenceCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.decode_sentence">
+<code class="sig-name descname">decode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">mem_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.decode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.embed_sentence">
+<code class="sig-name descname">embed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.embed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.encode_sentence">
+<code class="sig-name descname">encode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.encode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringEngine" title="convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">sel_tgt_probs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_decoder">
+<code class="sig-name descname">forward_decoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">mem_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_decoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_e_step">
+<code class="sig-name descname">forward_e_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z_prob</span></em>, <em class="sig-param"><span class="n">mem_h</span></em>, <em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">tgt</span></em>, <em class="sig-param"><span class="n">sel_tgt_prob</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_e_step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_encoder">
+<code class="sig-name descname">forward_encoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.forward_encoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.unembed_sentence">
+<code class="sig-name descname">unembed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dec_hs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringModel.unembed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">LatentClusteringPredictionModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.clear_weights">
+<code class="sig-name descname">clear_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.clear_weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="convlab2.e2e.rnn_rollout.data.SentenceCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.SentenceCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.embed_sentence">
+<code class="sig-name descname">embed_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.embed_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.encode_sentence">
+<code class="sig-name descname">encode_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">hid_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.encode_sentence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringPredictionEngine" title="convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringPredictionEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.latent_clustering_engine.LatentClusteringPredictionEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_encoder">
+<code class="sig-name descname">forward_encoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">inpt</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">hid_idx</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_encoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_kldiv">
+<code class="sig-name descname">forward_kldiv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">sel_tgt_probs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_kldiv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_marginal_loss">
+<code class="sig-name descname">forward_marginal_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q_z</span></em>, <em class="sig-param"><span class="n">lang_enc_h</span></em>, <em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">tgt</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_marginal_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_memory">
+<code class="sig-name descname">forward_memory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">mem_h</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">inpt</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">hid_idx</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_memory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_prediction">
+<code class="sig-name descname">forward_prediction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cnt</span></em>, <em class="sig-param"><span class="n">mem_h</span></em>, <em class="sig-param"><span class="n">sample</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_prediction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_prediction_multi">
+<code class="sig-name descname">forward_prediction_multi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cnt</span></em>, <em class="sig-param"><span class="n">mem_h</span></em>, <em class="sig-param"><span class="n">num_samples</span></em>, <em class="sig-param"><span class="n">sample</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_prediction_multi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_validation">
+<code class="sig-name descname">forward_validation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_validation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_validation_marginal">
+<code class="sig-name descname">forward_validation_marginal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">tgts</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">cnt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.forward_validation_marginal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">lang_enc_h</span></em>, <em class="sig-param"><span class="n">mem_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lang_enc_h</span></em>, <em class="sig-param"><span class="n">lat_h</span></em>, <em class="sig-param"><span class="n">max_words</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">start_token</span><span class="o">=</span><span class="default_value">'YOU:'</span></em>, <em class="sig-param"><span class="n">stop_tokens</span><span class="o">=</span><span class="default_value">['&lt;eos&gt;', '&lt;selection&gt;']</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.LatentClusteringPredictionModel.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.RecurrentUnit">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">RecurrentUnit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_size</span></em>, <em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.RecurrentUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.RecurrentUnit.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.RecurrentUnit.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">ShardedLatentBottleneckModule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_shards</span></em>, <em class="sig-param"><span class="n">num_clusters</span></em>, <em class="sig-param"><span class="n">input_size</span></em>, <em class="sig-param"><span class="n">output_size</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shard</span></em>, <em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.select">
+<code class="sig-name descname">select</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shard</span></em>, <em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.select_shard">
+<code class="sig-name descname">select_shard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shard</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.select_shard" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.zero_grad">
+<code class="sig-name descname">zero_grad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.ShardedLatentBottleneckModule.zero_grad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets gradients of all model parameters to zero.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.latent_clustering_model.</code><code class="sig-name descname">SimpleSeparateSelectionModule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_size</span></em>, <em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">output_size</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.latent_clustering_model.SimpleSeparateSelectionModule.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.modules">
+<span id="convlab2-e2e-rnn-rollout-models-modules-module"></span><h2>convlab2.e2e.rnn_rollout.models.modules module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.modules" title="Permalink to this headline">¶</a></h2>
+<p>Helper functions for module initialization.</p>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.CudaModule">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">CudaModule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">device_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.CudaModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>A helper to run a module on a particular device using CUDA.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.CudaModule.to_device">
+<code class="sig-name descname">to_device</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">m</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.CudaModule.to_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.MlpContextEncoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">MlpContextEncoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">nembed</span></em>, <em class="sig-param"><span class="n">nhid</span></em>, <em class="sig-param"><span class="n">init_range</span></em>, <em class="sig-param"><span class="n">device_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.MlpContextEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.models.modules.CudaModule" title="convlab2.e2e.rnn_rollout.models.modules.CudaModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.models.modules.CudaModule</span></code></a></p>
+<p>A module that encodes dialogues context using an MLP.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.MlpContextEncoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.MlpContextEncoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.RnnContextEncoder">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">RnnContextEncoder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">k</span></em>, <em class="sig-param"><span class="n">nembed</span></em>, <em class="sig-param"><span class="n">nhid</span></em>, <em class="sig-param"><span class="n">init_range</span></em>, <em class="sig-param"><span class="n">device_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.RnnContextEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#convlab2.e2e.rnn_rollout.models.modules.CudaModule" title="convlab2.e2e.rnn_rollout.models.modules.CudaModule"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.models.modules.CudaModule</span></code></a></p>
+<p>A module that encodes dialogues context using an RNN.</p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.RnnContextEncoder.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.RnnContextEncoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.init_cont">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">init_cont</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cont</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.init_cont" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes a container uniformly.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.init_rnn">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">init_rnn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">init_range</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">biases</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.init_rnn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes RNN uniformly.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.modules.init_rnn_cell">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.modules.</code><code class="sig-name descname">init_rnn_cell</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.modules.init_rnn_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes RNNCell uniformly.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.rnn_model">
+<span id="convlab2-e2e-rnn-rollout-models-rnn-model-module"></span><h2>convlab2.e2e.rnn_rollout.models.rnn_model module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.rnn_model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.rnn_model.</code><code class="sig-name descname">RnnModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.WordCorpus" title="convlab2.e2e.rnn_rollout.data.WordCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.WordCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine" title="convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.rnn_engine.RnnEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_context">
+<code class="sig-name descname">forward_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_lm">
+<code class="sig-name descname">forward_lm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_lm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_selection">
+<code class="sig-name descname">forward_selection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt_emb</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.forward_selection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.generate_choice_logits">
+<code class="sig-name descname">generate_choice_logits</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.generate_choice_logits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.init_weights">
+<code class="sig-name descname">init_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.init_weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpt</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">prefix_token</span><span class="o">=</span><span class="default_value">'THEM:'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.score_sent">
+<code class="sig-name descname">score_sent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sent</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">temperature</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.score_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.word2var">
+<code class="sig-name descname">word2var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.word2var" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">max_words</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">stop_tokens</span><span class="o">=</span><span class="default_value">['&lt;eos&gt;', '&lt;selection&gt;']</span></em>, <em class="sig-param"><span class="n">resume</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a sentence word by word and feed the output of the
+previous timestep as input to the next.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.write_batch">
+<code class="sig-name descname">write_batch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">lang_h</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em>, <em class="sig-param"><span class="n">temperature</span></em>, <em class="sig-param"><span class="n">max_words</span><span class="o">=</span><span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.write_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.zero_h">
+<code class="sig-name descname">zero_h</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bsz</span></em>, <em class="sig-param"><span class="n">nhid</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">copies</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.rnn_model.RnnModel.zero_h" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.selection_model">
+<span id="convlab2-e2e-rnn-rollout-models-selection-model-module"></span><h2>convlab2.e2e.rnn_rollout.models.selection_model module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.selection_model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.selection_model.</code><code class="sig-name descname">SelectionModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word_dict</span></em>, <em class="sig-param"><span class="n">item_dict</span></em>, <em class="sig-param"><span class="n">context_dict</span></em>, <em class="sig-param"><span class="n">count_dict</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.corpus_ty">
+<code class="sig-name descname">corpus_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.corpus_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.html#convlab2.e2e.rnn_rollout.data.SentenceCorpus" title="convlab2.e2e.rnn_rollout.data.SentenceCorpus"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.data.SentenceCorpus</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.engine_ty">
+<code class="sig-name descname">engine_ty</code><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.engine_ty" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="convlab2.e2e.rnn_rollout.engines.html#convlab2.e2e.rnn_rollout.engines.selection_engine.SelectionEngine" title="convlab2.e2e.rnn_rollout.engines.selection_engine.SelectionEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.e2e.rnn_rollout.engines.selection_engine.SelectionEngine</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward_each_timestamp">
+<code class="sig-name descname">forward_each_timestamp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em>, <em class="sig-param"><span class="n">ctx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward_each_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward_inpts">
+<code class="sig-name descname">forward_inpts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inpts</span></em>, <em class="sig-param"><span class="n">ctx_h</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModel.forward_inpts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.selection_model.</code><code class="sig-name descname">SelectionModule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query_size</span></em>, <em class="sig-param"><span class="n">value_size</span></em>, <em class="sig-param"><span class="n">hidden_size</span></em>, <em class="sig-param"><span class="n">selection_size</span></em>, <em class="sig-param"><span class="n">num_heads</span></em>, <em class="sig-param"><span class="n">output_size</span></em>, <em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule.flatten_parameters">
+<code class="sig-name descname">flatten_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule.flatten_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q</span></em>, <em class="sig-param"><span class="n">hs</span></em>, <em class="sig-param"><span class="n">lens</span></em>, <em class="sig-param"><span class="n">rev_idxs</span></em>, <em class="sig-param"><span class="n">hid_idxs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.selection_model.SelectionModule.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models.utils">
+<span id="convlab2-e2e-rnn-rollout-models-utils-module"></span><h2>convlab2.e2e.rnn_rollout.models.utils module<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models.utils" title="Permalink to this headline">¶</a></h2>
+<p>A set of useful tools.</p>
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.utils.init_cont">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.utils.</code><code class="sig-name descname">init_cont</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cont</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.utils.init_cont" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform initialization of a container.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.utils.init_linear">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.utils.</code><code class="sig-name descname">init_linear</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">linear</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.utils.init_linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform initialization of Linear.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.utils.init_rnn">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.utils.</code><code class="sig-name descname">init_rnn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">init_range</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">biases</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.utils.init_rnn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orthogonal initialization of RNN.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.utils.init_rnn_cell">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.utils.</code><code class="sig-name descname">init_rnn_cell</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnn</span></em>, <em class="sig-param"><span class="n">init_range</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.utils.init_rnn_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orthogonal initialization of RNNCell.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.utils.make_mask">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.utils.</code><code class="sig-name descname">make_mask</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">marked</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">- 1000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.utils.make_mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a masked tensor.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-convlab2.e2e.rnn_rollout.models">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.e2e.rnn_rollout.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.get_model_names">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.</code><code class="sig-name descname">get_model_names</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.get_model_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.e2e.rnn_rollout.models.get_model_type">
+<code class="sig-prename descclassname">convlab2.e2e.rnn_rollout.models.</code><code class="sig-name descname">get_model_type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.rnn_rollout.models.get_model_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, thu-coai
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
