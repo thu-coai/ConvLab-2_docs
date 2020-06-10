@@ -208,7 +208,7 @@ Utilities for working with the local dataset cache.</p>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <dl class="py attribute">
 <dt id="convlab2.util.allennlp_file_utils.Tqdm.default_mininterval">
-<code class="sig-name descname">default_mininterval</code><em class="property">: float</em><em class="property"> = 0.1</em><a class="headerlink" href="#convlab2.util.allennlp_file_utils.Tqdm.default_mininterval" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">default_mininterval</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a></em><em class="property"> = 0.1</em><a class="headerlink" href="#convlab2.util.allennlp_file_utils.Tqdm.default_mininterval" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -272,7 +272,7 @@ If it’s not there, download it. Then return the path to the cached file.</p>
 
 <dl class="py function">
 <dt id="convlab2.util.allennlp_file_utils.is_url_or_existing_file">
-<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">is_url_or_existing_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url_or_filename</span><span class="p">:</span> <span class="n">Union[str, pathlib.Path, None]</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a><a class="headerlink" href="#convlab2.util.allennlp_file_utils.is_url_or_existing_file" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">is_url_or_existing_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url_or_filename</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>Union<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.8)">pathlib.Path</a><span class="p">]</span><span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a><a class="headerlink" href="#convlab2.util.allennlp_file_utils.is_url_or_existing_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given something that might be a URL (or might be a local path),
 determine check if it’s url or an existing file path.</p>
 </dd></dl>
@@ -286,13 +286,13 @@ Expected file format is one item per line.</p>
 
 <dl class="py function">
 <dt id="convlab2.util.allennlp_file_utils.s3_etag">
-<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">s3_etag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span> &#x2192; Optional<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">]</span><a class="headerlink" href="#convlab2.util.allennlp_file_utils.s3_etag" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">s3_etag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> &#x2192; Optional<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">]</span><a class="headerlink" href="#convlab2.util.allennlp_file_utils.s3_etag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check ETag on S3 object.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="convlab2.util.allennlp_file_utils.s3_get">
-<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">s3_get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="n">temp_file</span><span class="p">:</span> <span class="n">IO</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a><a class="headerlink" href="#convlab2.util.allennlp_file_utils.s3_get" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">convlab2.util.allennlp_file_utils.</code><code class="sig-name descname">s3_get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a><a class="headerlink" href="#convlab2.util.allennlp_file_utils.s3_get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pull a file directly from S3.</p>
 </dd></dl>
 
