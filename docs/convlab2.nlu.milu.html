@@ -85,8 +85,8 @@
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.dai_f1_measure">convlab2.nlu.milu.dai_f1_measure module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.dataset_reader">convlab2.nlu.milu.dataset_reader module</a></li>
-<li><a class="reference internal" href="#module-convlab2.nlu.milu.evaluate">convlab2.nlu.milu.evaluate module</a></li>
-<li><a class="reference internal" href="#module-convlab2.nlu.milu.model">convlab2.nlu.milu.model module</a></li>
+<li><a class="reference internal" href="#convlab2-nlu-milu-evaluate-module">convlab2.nlu.milu.evaluate module</a></li>
+<li><a class="reference internal" href="#convlab2-nlu-milu-model-module">convlab2.nlu.milu.model module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.multilabel_f1_measure">convlab2.nlu.milu.multilabel_f1_measure module</a></li>
 <li><a class="reference internal" href="#convlab2-nlu-milu-train-module">convlab2.nlu.milu.train module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu">Module contents</a></li>
@@ -164,8 +164,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html">convlab2.nlu.milu.multiwoz package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html#module-convlab2.nlu.milu.multiwoz.nlu">convlab2.nlu.milu.multiwoz.nlu module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html#module-convlab2.nlu.milu.multiwoz">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html#convlab2-nlu-milu-multiwoz-nlu-module">convlab2.nlu.milu.multiwoz.nlu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.nlu.milu.multiwoz.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -230,68 +230,11 @@ are pre-tokenised in the data file.</p>
 </dd></dl>
 
 </div>
-<div class="section" id="module-convlab2.nlu.milu.evaluate">
-<span id="convlab2-nlu-milu-evaluate-module"></span><h2>convlab2.nlu.milu.evaluate module<a class="headerlink" href="#module-convlab2.nlu.milu.evaluate" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">evaluate</span></code> subcommand can be used to
-evaluate a trained model against a dataset
-and report any metrics calculated by the model.</p>
-<dl class="py function">
-<dt id="convlab2.nlu.milu.evaluate.evaluate_from_args">
-<code class="sig-prename descclassname">convlab2.nlu.milu.evaluate.</code><code class="sig-name descname">evaluate_from_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Namespace" title="(in Python v3.8)">argparse.Namespace</a></span></em><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>Any<span class="p">]</span><a class="headerlink" href="#convlab2.nlu.milu.evaluate.evaluate_from_args" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<div class="section" id="convlab2-nlu-milu-evaluate-module">
+<h2>convlab2.nlu.milu.evaluate module<a class="headerlink" href="#convlab2-nlu-milu-evaluate-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-convlab2.nlu.milu.model">
-<span id="convlab2-nlu-milu-model-module"></span><h2>convlab2.nlu.milu.model module<a class="headerlink" href="#module-convlab2.nlu.milu.model" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="convlab2.nlu.milu.model.MILU">
-<em class="property">class </em><code class="sig-prename descclassname">convlab2.nlu.milu.model.</code><code class="sig-name descname">MILU</code><span class="sig-paren">(</span><em class="sig-param">vocab: allennlp.data.vocabulary.Vocabulary</em>, <em class="sig-param">text_field_embedder: allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder</em>, <em class="sig-param">encoder: allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder</em>, <em class="sig-param">intent_encoder: allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder = None</em>, <em class="sig-param">tag_encoder: allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder = None</em>, <em class="sig-param">attention: allennlp.modules.attention.attention.Attention = None</em>, <em class="sig-param">attention_function: allennlp.modules.similarity_functions.similarity_function.SimilarityFunction = None</em>, <em class="sig-param">context_for_intent: bool = True</em>, <em class="sig-param">context_for_tag: bool = True</em>, <em class="sig-param">attention_for_intent: bool = True</em>, <em class="sig-param">attention_for_tag: bool = True</em>, <em class="sig-param">sequence_label_namespace: str = 'labels'</em>, <em class="sig-param">intent_label_namespace: str = 'intent_labels'</em>, <em class="sig-param">feedforward: Optional[allennlp.modules.feedforward.FeedForward] = None</em>, <em class="sig-param">label_encoding: Optional[str] = None</em>, <em class="sig-param">include_start_end_transitions: bool = True</em>, <em class="sig-param">crf_decoding: bool = False</em>, <em class="sig-param">constrain_crf_decoding: bool = None</em>, <em class="sig-param">focal_loss_gamma: float = None</em>, <em class="sig-param">nongeneral_intent_weight: float = 5.0</em>, <em class="sig-param">num_train_examples: float = None</em>, <em class="sig-param">calculate_span_f1: bool = None</em>, <em class="sig-param">dropout: Optional[float] = None</em>, <em class="sig-param">verbose_metrics: bool = False</em>, <em class="sig-param">initializer: allennlp.nn.initializers.InitializerApplicator = &lt;allennlp.nn.initializers.InitializerApplicator object&gt;</em>, <em class="sig-param">regularizer: Optional[allennlp.nn.regularizers.regularizer_applicator.RegularizerApplicator] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.milu.model.MILU" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.models.model.Model</span></code></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">MILU</span></code> encodes a sequence of text with a <code class="docutils literal notranslate"><span class="pre">Seq2SeqEncoder</span></code>,
-then performs multi-label classification for closed-class dialog act items and 
-sequence labeling to predict a tag for each token in the sequence.</p>
-<dl>
-<dt>initializer<span class="classifier"><code class="docutils literal notranslate"><span class="pre">InitializerApplicator</span></code>, optional (default=``InitializerApplicator()``)</span></dt><dd><p>Used to initialize the model parameters.</p>
-</dd>
-<dt>regularizer<span class="classifier"><code class="docutils literal notranslate"><span class="pre">RegularizerApplicator</span></code>, optional (default=``None``)</span></dt><dd><p>If provided, will be used to calculate the regularization penalty during training.</p>
-</dd>
-</dl>
-<dl class="py method">
-<dt id="convlab2.nlu.milu.model.MILU.decode">
-<code class="sig-name descname">decode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_dict</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>torch.Tensor<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>torch.Tensor<span class="p">]</span><a class="headerlink" href="#convlab2.nlu.milu.model.MILU.decode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Converts the tag ids to the actual tags.
-<code class="docutils literal notranslate"><span class="pre">output_dict[&quot;tags&quot;]</span></code> is a list of lists of tag_ids,
-so we use an ugly nested list comprehension.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.nlu.milu.model.MILU.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context_tokens</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>torch.LongTensor<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">tokens</span><span class="p">:</span> <span class="n">Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>torch.LongTensor<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">torch.LongTensor</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">intents</span><span class="p">:</span> <span class="n">torch.LongTensor</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">metadata</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>Any<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span>torch.Tensor<span class="p">]</span><a class="headerlink" href="#convlab2.nlu.milu.model.MILU.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.nlu.milu.model.MILU.get_metrics">
-<code class="sig-name descname">get_metrics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reset</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; Dict<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a><span class="p">, </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a><span class="p">]</span><a class="headerlink" href="#convlab2.nlu.milu.model.MILU.get_metrics" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a dictionary of metrics. This method will be called by
-<code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.training.Trainer</span></code> in order to compute and use model metrics for early
-stopping and model serialization.  We return an empty dictionary here rather than raising
-as it is not required to implement metrics for a new model.  A boolean <cite>reset</cite> parameter is
-passed, as frequently a metric accumulator will have some state which should be reset
-between epochs. This is also compatible with <code class="xref py py-class docutils literal notranslate"> <span class="pre">Metrics</span>
-<span class="pre">should</span> <span class="pre">be</span> <span class="pre">populated</span> <span class="pre">during</span> <span class="pre">the</span> <span class="pre">call</span> <span class="pre">to</span> <span class="pre">``forward`</span></code>, with the
-<code class="xref py py-class docutils literal notranslate"><span class="pre">Metric</span></code> handling the accumulation of the metric until this
-method is called.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.nlu.milu.model.MILU.get_predicted_tags">
-<code class="sig-name descname">get_predicted_tags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sequence_logits</span><span class="p">:</span> <span class="n">torch.Tensor</span></em><span class="sig-paren">)</span> &#x2192; torch.Tensor<a class="headerlink" href="#convlab2.nlu.milu.model.MILU.get_predicted_tags" title="Permalink to this definition">¶</a></dt>
-<dd><p>Does a simple position-wise argmax over each token, converts indices to string labels, and
-adds a <code class="docutils literal notranslate"><span class="pre">&quot;tags&quot;</span></code> key to the dictionary with the result.</p>
-</dd></dl>
-
-</dd></dl>
-
+<div class="section" id="convlab2-nlu-milu-model-module">
+<h2>convlab2.nlu.milu.model module<a class="headerlink" href="#convlab2-nlu-milu-model-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-convlab2.nlu.milu.multilabel_f1_measure">
 <span id="convlab2-nlu-milu-multilabel-f1-measure-module"></span><h2>convlab2.nlu.milu.multilabel_f1_measure module<a class="headerlink" href="#module-convlab2.nlu.milu.multilabel_f1_measure" title="Permalink to this headline">¶</a></h2>
