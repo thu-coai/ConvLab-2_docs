@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
@@ -48,7 +49,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> ConvLab-2
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ConvLab-2
           
 
           
@@ -71,6 +72,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -83,7 +85,7 @@
 <li><a class="reference internal" href="#">convlab2.policy package</a><ul>
 <li><a class="reference internal" href="#subpackages">Subpackages</a></li>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#convlab2-policy-evaluate-module">convlab2.policy.evaluate module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.evaluate">convlab2.policy.evaluate module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.policy">convlab2.policy.policy module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.rlmodule">convlab2.policy.rlmodule module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.vec">convlab2.policy.vec module</a></li>
@@ -95,6 +97,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -133,7 +136,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>convlab2.policy package</li>
     
@@ -325,8 +328,59 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="convlab2-policy-evaluate-module">
-<h2>convlab2.policy.evaluate module<a class="headerlink" href="#convlab2-policy-evaluate-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.policy.evaluate">
+<span id="convlab2-policy-evaluate-module"></span><h2>convlab2.policy.evaluate module<a class="headerlink" href="#module-convlab2.policy.evaluate" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.evaluate">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset_name</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">load_path</span></em>, <em class="sig-param"><span class="n">calculate_reward</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.init_logging">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">init_logging</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log_dir_path</span></em>, <em class="sig-param"><span class="n">path_suffix</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.init_logging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.sample">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em>, <em class="sig-param"><span class="n">process_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given batchsz number of task, the batchsz will be splited equally to each processes
+and when processes return, it merge all data and return</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param env</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">param policy</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>batchsz</strong> – <dl class="field-list simple">
+<dt class="field-odd">param process_num</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>batch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.evaluate.sampler">
+<code class="sig-prename descclassname">convlab2.policy.evaluate.</code><code class="sig-name descname">sampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">queue</span></em>, <em class="sig-param"><span class="n">evt</span></em>, <em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.evaluate.sampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a sampler function, and it will be called by multiprocess.Process to sample data from environment by multiple
+processes.
+:param pid: process id
+:param queue: multiprocessing.Queue, to collect sampled data
+:param evt: multiprocessing.Event, to keep the process alive
+:param env: environment instance
+:param policy: policy network, to generate action from current policy
+:param batchsz: total sampled items
+:return:</p>
+</dd></dl>
+
 </div>
 <div class="section" id="module-convlab2.policy.policy">
 <span id="convlab2-policy-policy-module"></span><h2>convlab2.policy.policy module<a class="headerlink" href="#module-convlab2.policy.policy" title="Permalink to this headline">¶</a></h2>
@@ -654,11 +708,19 @@ registered hooks while the latter silently ignores them.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, thu-coai
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -669,7 +731,6 @@ registered hooks while the latter silently ignores them.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
