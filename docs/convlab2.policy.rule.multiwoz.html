@@ -294,11 +294,11 @@ Returns:</p>
 
 <dl class="py method">
 <dt id="convlab2.policy.rule.multiwoz.policy_agenda_multiwoz.UserPolicyAgendaMultiWoz.predict">
-<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rule.multiwoz.policy_agenda_multiwoz.UserPolicyAgendaMultiWoz.predict" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sys_dialog_act</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rule.multiwoz.policy_agenda_multiwoz.UserPolicyAgendaMultiWoz.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict an user act based on state and preorder system action.
 Args:</p>
 <blockquote>
-<div><p>state (tuple): Dialog state.</p>
+<div><p>sys_dialog_act (list): system dialogue act: [[intent, domain, slot, value],…].</p>
 </div></blockquote>
 <dl class="simple">
 <dt>Returns:</dt><dd><p>action (tuple): User act.
