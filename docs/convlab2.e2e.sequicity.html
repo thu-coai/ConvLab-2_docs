@@ -506,20 +506,16 @@ One hot vector, indicating the number of entries found: [0, 1, 2, 3, 4, &gt;=5]
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.Attn.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.Attn.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.Attn.score">
 <code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.Attn.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.sequicity.tsd_net.Attn.training">
+<code class="sig-name descname">training</code><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.Attn.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -531,16 +527,12 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.BSpanDecoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u_enc_out</span></em>, <em class="sig-param"><span class="n">z_tm1</span></em>, <em class="sig-param"><span class="n">last_hidden</span></em>, <em class="sig-param"><span class="n">u_input_np</span></em>, <em class="sig-param"><span class="n">pv_z_enc_out</span></em>, <em class="sig-param"><span class="n">prev_z_input_np</span></em>, <em class="sig-param"><span class="n">u_emb</span></em>, <em class="sig-param"><span class="n">pv_z_emb</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.BSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.sequicity.tsd_net.BSpanDecoder.training">
+<code class="sig-name descname">training</code><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.BSpanDecoder.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -551,20 +543,16 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.ResponseDecoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z_enc_out</span></em>, <em class="sig-param"><span class="n">u_enc_out</span></em>, <em class="sig-param"><span class="n">u_input_np</span></em>, <em class="sig-param"><span class="n">m_t_input</span></em>, <em class="sig-param"><span class="n">degree_input</span></em>, <em class="sig-param"><span class="n">last_hidden</span></em>, <em class="sig-param"><span class="n">z_input_np</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.ResponseDecoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.ResponseDecoder.get_sparse_selective_input">
 <code class="sig-name descname">get_sparse_selective_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_input_np</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.ResponseDecoder.get_sparse_selective_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.sequicity.tsd_net.ResponseDecoder.training">
+<code class="sig-name descname">training</code><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.ResponseDecoder.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -582,6 +570,11 @@ registered hooks while the latter silently ignores them.</p>
 :param input_lens: <em>numpy array</em> of len for each input sequence
 :return:</p>
 </dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.sequicity.tsd_net.SimpleDynamicEncoder.training">
+<code class="sig-name descname">training</code><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.SimpleDynamicEncoder.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -612,16 +605,7 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.TSD.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">u_input</span></em>, <em class="sig-param"><span class="n">u_input_np</span></em>, <em class="sig-param"><span class="n">m_input</span></em>, <em class="sig-param"><span class="n">m_input_np</span></em>, <em class="sig-param"><span class="n">z_input</span></em>, <em class="sig-param"><span class="n">u_len</span></em>, <em class="sig-param"><span class="n">m_len</span></em>, <em class="sig-param"><span class="n">turn_states</span></em>, <em class="sig-param"><span class="n">degree_input</span></em>, <em class="sig-param"><span class="n">mode</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.TSD.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.TSD.forward_turn">
@@ -676,6 +660,11 @@ registered hooks while the latter silently ignores them.</p>
 <dl class="py method">
 <dt id="convlab2.e2e.sequicity.tsd_net.TSD.supervised_loss">
 <code class="sig-name descname">supervised_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pz_proba</span></em>, <em class="sig-param"><span class="n">pm_dec_proba</span></em>, <em class="sig-param"><span class="n">z_input</span></em>, <em class="sig-param"><span class="n">m_input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.TSD.supervised_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="convlab2.e2e.sequicity.tsd_net.TSD.training">
+<code class="sig-name descname">training</code><a class="headerlink" href="#convlab2.e2e.sequicity.tsd_net.TSD.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
