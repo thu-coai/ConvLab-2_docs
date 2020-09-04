@@ -85,7 +85,7 @@
 <li><a class="reference internal" href="#">convlab2.evaluator package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#module-convlab2.evaluator.evaluator">convlab2.evaluator.evaluator module</a></li>
-<li><a class="reference internal" href="#module-convlab2.evaluator.multiwoz_eval">convlab2.evaluator.multiwoz_eval module</a></li>
+<li><a class="reference internal" href="#convlab2-evaluator-multiwoz-eval-module">convlab2.evaluator.multiwoz_eval module</a></li>
 <li><a class="reference internal" href="#module-convlab2.evaluator">Module contents</a></li>
 </ul>
 </li>
@@ -237,89 +237,8 @@
 </dd></dl>
 
 </div>
-<div class="section" id="module-convlab2.evaluator.multiwoz_eval">
-<span id="convlab2-evaluator-multiwoz-eval-module"></span><h2>convlab2.evaluator.multiwoz_eval module<a class="headerlink" href="#module-convlab2.evaluator.multiwoz_eval" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator">
-<em class="property">class </em><code class="sig-prename descclassname">convlab2.evaluator.multiwoz_eval.</code><code class="sig-name descname">MultiWozEvaluator</code><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#convlab2.evaluator.evaluator.Evaluator" title="convlab2.evaluator.evaluator.Evaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.evaluator.evaluator.Evaluator</span></code></a></p>
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_goal">
-<code class="sig-name descname">add_goal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">goal</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_goal" title="Permalink to this definition">¶</a></dt>
-<dd><p>init goal and array</p>
-<dl class="simple">
-<dt>args:</dt><dd><dl class="simple">
-<dt>goal:</dt><dd><p>dict[domain] dict[‘info’/’book’/’reqt’] dict/dict/list[slot]</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_sys_da">
-<code class="sig-name descname">add_sys_da</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">da_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_sys_da" title="Permalink to this definition">¶</a></dt>
-<dd><p>add sys_da into array</p>
-<dl class="simple">
-<dt>args:</dt><dd><dl class="simple">
-<dt>da_turn:</dt><dd><p>list[intent, domain, slot, value]</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_usr_da">
-<code class="sig-name descname">add_usr_da</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">da_turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.add_usr_da" title="Permalink to this definition">¶</a></dt>
-<dd><p>add usr_da into array</p>
-<dl class="simple">
-<dt>args:</dt><dd><dl class="simple">
-<dt>da_turn:</dt><dd><p>list[intent, domain, slot, value]</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.book_rate">
-<code class="sig-name descname">book_rate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ref2goal</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">aggregate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.book_rate" title="Permalink to this definition">¶</a></dt>
-<dd><p>judge if the selected entity meets the constraint</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.domain_reqt_inform_analyze">
-<code class="sig-name descname">domain_reqt_inform_analyze</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">ref2goal</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.domain_reqt_inform_analyze" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.domain_success">
-<code class="sig-name descname">domain_success</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">ref2goal</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.domain_success" title="Permalink to this definition">¶</a></dt>
-<dd><p>judge if the domain (subtask) is successfully completed</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.final_goal_analyze">
-<code class="sig-name descname">final_goal_analyze</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.final_goal_analyze" title="Permalink to this definition">¶</a></dt>
-<dd><p>percentage of domains, in which the final goal satisfies the database constraints.
-If there is no dialog action, returns 1.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.inform_F1">
-<code class="sig-name descname">inform_F1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ref2goal</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">aggregate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.inform_F1" title="Permalink to this definition">¶</a></dt>
-<dd><p>judge if all the requested information is answered</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.task_success">
-<code class="sig-name descname">task_success</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ref2goal</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.evaluator.multiwoz_eval.MultiWozEvaluator.task_success" title="Permalink to this definition">¶</a></dt>
-<dd><p>judge if all the domains are successfully completed</p>
-</dd></dl>
-
-</dd></dl>
-
+<div class="section" id="convlab2-evaluator-multiwoz-eval-module">
+<h2>convlab2.evaluator.multiwoz_eval module<a class="headerlink" href="#convlab2-evaluator-multiwoz-eval-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-convlab2.evaluator">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.evaluator" title="Permalink to this headline">¶</a></h2>
