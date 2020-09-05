@@ -87,7 +87,7 @@
 <li><a class="reference internal" href="#module-convlab2.policy.vector.dataset">convlab2.policy.vector.dataset module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.vector.vector_camrest">convlab2.policy.vector.vector_camrest module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.vector.vector_crosswoz">convlab2.policy.vector.vector_crosswoz module</a></li>
-<li><a class="reference internal" href="#convlab2-policy-vector-vector-multiwoz-module">convlab2.policy.vector.vector_multiwoz module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.vector.vector_multiwoz">convlab2.policy.vector.vector_multiwoz module</a></li>
 <li><a class="reference internal" href="#module-convlab2.policy.vector">Module contents</a></li>
 </ul>
 </li>
@@ -285,8 +285,96 @@
 </dd></dl>
 
 </div>
-<div class="section" id="convlab2-policy-vector-vector-multiwoz-module">
-<h2>convlab2.policy.vector.vector_multiwoz module<a class="headerlink" href="#convlab2-policy-vector-vector-multiwoz-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.policy.vector.vector_multiwoz">
+<span id="convlab2-policy-vector-vector-multiwoz-module"></span><h2>convlab2.policy.vector.vector_multiwoz module<a class="headerlink" href="#module-convlab2.policy.vector.vector_multiwoz" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.vector.vector_multiwoz.</code><code class="sig-name descname">MultiWozVector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voc_file</span></em>, <em class="sig-param"><span class="n">voc_opp_file</span></em>, <em class="sig-param"><span class="n">character</span><span class="o">=</span><span class="default_value">'sys'</span></em>, <em class="sig-param"><span class="n">intent_file</span><span class="o">=</span><span class="default_value">'/home/travis/build/thu-coai/ConvLab-2/data/multiwoz/trackable_intent.json'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.policy.html#convlab2.policy.vec.Vector" title="convlab2.policy.vec.Vector"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.policy.vec.Vector</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.action_devectorize">
+<code class="sig-name descname">action_devectorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action_vec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.action_devectorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>recover an action
+Args:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>action_vec (np.array):</dt><dd><p>Dialog act vector</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>action (tuple):</dt><dd><p>Dialog act</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.action_vectorize">
+<code class="sig-name descname">action_vectorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.action_vectorize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.dbquery_domain">
+<code class="sig-name descname">dbquery_domain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">domain</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.dbquery_domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>query entities of specified domain
+Args:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>domain string:</dt><dd><p>domain to query</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>entities list:</dt><dd><p>list of entities of the specified domain</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.generate_dict">
+<code class="sig-name descname">generate_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.generate_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the dict for mapping state/action into vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.one_hot_vector">
+<code class="sig-name descname">one_hot_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span></em>, <em class="sig-param"><span class="n">domain</span></em>, <em class="sig-param"><span class="n">vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.one_hot_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of available entities for particular domain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.pointer">
+<code class="sig-name descname">pointer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">turn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.pointer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.state_vectorize">
+<code class="sig-name descname">state_vectorize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.state_vectorize" title="Permalink to this definition">¶</a></dt>
+<dd><p>vectorize a state</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>state (dict):</dt><dd><p>Dialog state</p>
+</dd>
+<dt>action (tuple):</dt><dd><p>Dialog act</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>state_vec (np.array):</dt><dd><p>Dialog state vector</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="module-convlab2.policy.vector">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.policy.vector" title="Permalink to this headline">¶</a></h2>

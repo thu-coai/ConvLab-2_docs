@@ -84,7 +84,7 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">convlab2.task.multiwoz package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#convlab2-task-multiwoz-goal-generator-module">convlab2.task.multiwoz.goal_generator module</a></li>
+<li><a class="reference internal" href="#module-convlab2.task.multiwoz.goal_generator">convlab2.task.multiwoz.goal_generator module</a></li>
 <li><a class="reference internal" href="#module-convlab2.task.multiwoz">Module contents</a></li>
 </ul>
 </li>
@@ -158,8 +158,40 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="convlab2-task-multiwoz-goal-generator-module">
-<h2>convlab2.task.multiwoz.goal_generator module<a class="headerlink" href="#convlab2-task-multiwoz-goal-generator-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.task.multiwoz.goal_generator">
+<span id="convlab2-task-multiwoz-goal-generator-module"></span><h2>convlab2.task.multiwoz.goal_generator module<a class="headerlink" href="#module-convlab2.task.multiwoz.goal_generator" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.task.multiwoz.goal_generator.GoalGenerator">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.task.multiwoz.goal_generator.</code><code class="sig-name descname">GoalGenerator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">goal_model_path</span><span class="o">=</span><span class="default_value">'/home/travis/build/thu-coai/ConvLab-2/data/multiwoz/goal/new_goal_model.pkl'</span></em>, <em class="sig-param"><span class="n">corpus_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">boldify</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">sample_info_from_trainset</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">sample_reqt_from_trainset</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.GoalGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>User goal generator.</p>
+<dl class="py method">
+<dt id="convlab2.task.multiwoz.goal_generator.GoalGenerator.build_message">
+<code class="sig-name descname">build_message</code><span class="sig-paren">(</span><em class="sig-param">user_goal</em>, <em class="sig-param">boldify=&lt;function null_boldify&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.GoalGenerator.build_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.task.multiwoz.goal_generator.GoalGenerator.get_user_goal">
+<code class="sig-name descname">get_user_goal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.GoalGenerator.get_user_goal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.task.multiwoz.goal_generator.do_boldify">
+<code class="sig-prename descclassname">convlab2.task.multiwoz.goal_generator.</code><code class="sig-name descname">do_boldify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.do_boldify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.task.multiwoz.goal_generator.nomial_sample">
+<code class="sig-prename descclassname">convlab2.task.multiwoz.goal_generator.</code><code class="sig-name descname">nomial_sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">counter</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.Counter" title="(in Python v3.8)">collections.Counter</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.nomial_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.task.multiwoz.goal_generator.null_boldify">
+<code class="sig-prename descclassname">convlab2.task.multiwoz.goal_generator.</code><code class="sig-name descname">null_boldify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.task.multiwoz.goal_generator.null_boldify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 <div class="section" id="module-convlab2.task.multiwoz">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.task.multiwoz" title="Permalink to this headline">¶</a></h2>

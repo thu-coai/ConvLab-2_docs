@@ -85,9 +85,9 @@
 <li><a class="reference internal" href="#">convlab2.policy.ppo package</a><ul>
 <li><a class="reference internal" href="#subpackages">Subpackages</a></li>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#convlab2-policy-ppo-ppo-module">convlab2.policy.ppo.ppo module</a></li>
-<li><a class="reference internal" href="#convlab2-policy-ppo-train-module">convlab2.policy.ppo.train module</a></li>
-<li><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.ppo.ppo">convlab2.policy.ppo.ppo module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.ppo.train">convlab2.policy.ppo.train module</a></li>
+<li><a class="reference internal" href="#module-convlab2.policy.ppo">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -163,8 +163,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html">convlab2.policy.ppo.multiwoz package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#convlab2-policy-ppo-multiwoz-ppo-policy-module">convlab2.policy.ppo.multiwoz.ppo_policy module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#module-convlab2.policy.ppo.multiwoz.ppo_policy">convlab2.policy.ppo.multiwoz.ppo_policy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convlab2.policy.ppo.multiwoz.html#module-convlab2.policy.ppo.multiwoz">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -173,14 +173,123 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="convlab2-policy-ppo-ppo-module">
-<h2>convlab2.policy.ppo.ppo module<a class="headerlink" href="#convlab2-policy-ppo-ppo-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.policy.ppo.ppo">
+<span id="convlab2-policy-ppo-ppo-module"></span><h2>convlab2.policy.ppo.ppo module<a class="headerlink" href="#module-convlab2.policy.ppo.ppo" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="convlab2.policy.ppo.ppo.PPO">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.ppo.ppo.</code><code class="sig-name descname">PPO</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">is_train</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dataset</span><span class="o">=</span><span class="default_value">'Multiwoz'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="convlab2.policy.html#convlab2.policy.policy.Policy" title="convlab2.policy.policy.Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.policy.policy.Policy</span></code></a></p>
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.est_adv">
+<code class="sig-name descname">est_adv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">r</span></em>, <em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">mask</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.est_adv" title="Permalink to this definition">¶</a></dt>
+<dd><p>we save a trajectory in continuous space and it reaches the ending of current trajectory when mask=0.
+:param r: reward, Tensor, [b]
+:param v: estimated value, Tensor, [b]
+:param mask: indicates ending for 0 otherwise 1, Tensor, [b]
+:return: A(s, a), V-target(s), both Tensor</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.from_pretrained">
+<em class="property">classmethod </em><code class="sig-name descname">from_pretrained</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">archive_file</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">model_file</span><span class="o">=</span><span class="default_value">'https://convlab.blob.core.windows.net/convlab-2/ppo_policy_multiwoz.zip'</span></em>, <em class="sig-param"><span class="n">is_train</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dataset</span><span class="o">=</span><span class="default_value">'Multiwoz'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.from_pretrained" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.init_session">
+<code class="sig-name descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore after one session</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.load_from_pretrained">
+<code class="sig-name descname">load_from_pretrained</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">archive_file</span></em>, <em class="sig-param"><span class="n">model_file</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.load_from_pretrained" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict an system action given state.
+Args:</p>
+<blockquote>
+<div><p>state (dict): Dialog state. Please refer to util/state.py</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>action : System act, with the form of (act_type, {slot_name_1: value_1, slot_name_2, value_2, …})</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em>, <em class="sig-param"><span class="n">epoch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.ppo.ppo.PPO.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">epoch</span></em>, <em class="sig-param"><span class="n">batchsz</span></em>, <em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">r</span></em>, <em class="sig-param"><span class="n">mask</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.ppo.PPO.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="convlab2-policy-ppo-train-module">
-<h2>convlab2.policy.ppo.train module<a class="headerlink" href="#convlab2-policy-ppo-train-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.policy.ppo.train">
+<span id="convlab2-policy-ppo-train-module"></span><h2>convlab2.policy.ppo.train module<a class="headerlink" href="#module-convlab2.policy.ppo.train" title="Permalink to this headline">¶</a></h2>
+<p>Created on Sun Jul 14 16:14:07 2019
+&#64;author: truthless</p>
+<dl class="py function">
+<dt id="convlab2.policy.ppo.train.sample">
+<code class="sig-prename descclassname">convlab2.policy.ppo.train.</code><code class="sig-name descname">sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em>, <em class="sig-param"><span class="n">process_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.train.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given batchsz number of task, the batchsz will be splited equally to each processes
+and when processes return, it merge all data and return</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param env</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">param policy</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>batchsz</strong> – <dl class="field-list simple">
+<dt class="field-odd">param process_num</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>batch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.ppo.train.sampler">
+<code class="sig-prename descclassname">convlab2.policy.ppo.train.</code><code class="sig-name descname">sampler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pid</span></em>, <em class="sig-param"><span class="n">queue</span></em>, <em class="sig-param"><span class="n">evt</span></em>, <em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.train.sampler" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a sampler function, and it will be called by multiprocess.Process to sample data from environment by multiple
+processes.
+:param pid: process id
+:param queue: multiprocessing.Queue, to collect sampled data
+:param evt: multiprocessing.Event, to keep the process alive
+:param env: environment instance
+:param policy: policy network, to generate action from current policy
+:param batchsz: total sampled items
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.policy.ppo.train.update">
+<code class="sig-prename descclassname">convlab2.policy.ppo.train.</code><code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span></em>, <em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">batchsz</span></em>, <em class="sig-param"><span class="n">epoch</span></em>, <em class="sig-param"><span class="n">process_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.ppo.train.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.policy.ppo">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.policy.ppo" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
