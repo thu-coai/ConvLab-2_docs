@@ -245,11 +245,6 @@
 :param decoded_batch: [B, nbest, T]</p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSelectionModel.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -259,7 +254,16 @@
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">bidx</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.get_probs">
@@ -270,11 +274,6 @@
 :param dec_hs: decoder hidden states [B, Tdec, H]
 :returns: [description]</p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ActSpanDecoder.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -298,11 +297,6 @@
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.Attn.score">
 <code class="sig-name descname">score</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Attn.score" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.Attn.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Attn.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -344,11 +338,6 @@
 <code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.BeliefSpanDecoder.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -363,11 +352,6 @@
 :param dec_hs: [B, Tdec, H]   testing: Tdec=1
 :return: raw_cp_score of each position, size [B, Tdec, Tenc]</p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.Copy.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.Copy.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -412,7 +396,16 @@
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.greedy_decode">
@@ -440,11 +433,6 @@
 <dd><p>compute required outputs for a single dialogue turn. Turn state{Dict} will be updated in each call.</p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.DAMD.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DAMD.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -454,16 +442,20 @@
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.get_probs">
 <code class="sig-name descname">get_probs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_hs</span></em>, <em class="sig-param"><span class="n">first_turn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.get_probs" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.DomainSpanDecoder.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -476,12 +468,16 @@
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.LayerNormalization.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 </dd></dl>
 
@@ -508,11 +504,6 @@ hs: tensor of size [n_layer * bi-direc,B,H]</p>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.MultiLayerGRUwithLN.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -522,7 +513,16 @@ hs: tensor of size [n_layer * bi-direc,B,H]</p>
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inputs</span></em>, <em class="sig-param"><span class="n">hidden_states</span></em>, <em class="sig-param"><span class="n">dec_last_w</span></em>, <em class="sig-param"><span class="n">dec_last_h</span></em>, <em class="sig-param"><span class="n">first_turn</span></em>, <em class="sig-param"><span class="n">first_step</span></em>, <em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'train'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.get_probs">
@@ -533,11 +533,6 @@ hs: tensor of size [n_layer * bi-direc,B,H]</p>
 :param dec_hs: decoder hidden states [B, Tdec, H]
 :returns: [description]</p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.ResponseDecoder.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -553,11 +548,6 @@ hs: tensor of size [n_layer * bi-direc,B,H]</p>
 :param hidden:
 :return: outputs [B,T,H], hidden [n_layer*bi-direc,B,H]</p>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.e2e.damd.multiwoz.damd_net.biGRUencoder.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 

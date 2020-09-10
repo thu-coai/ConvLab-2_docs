@@ -252,16 +252,20 @@
 <dl class="py method">
 <dt id="convlab2.policy.vhus.usermodule.Decoder.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">inputs=None</em>, <em class="sig-param">encoder_hidden=None</em>, <em class="sig-param">encoder_outputs=None</em>, <em class="sig-param">function=&lt;built-in method log_softmax of type object&gt;</em>, <em class="sig-param">teacher_forcing_ratio=0</em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vhus.usermodule.Decoder.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.policy.vhus.usermodule.Decoder.forward_step">
 <code class="sig-name descname">forward_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_var</span></em>, <em class="sig-param"><span class="n">hidden</span></em>, <em class="sig-param"><span class="n">encoder_outputs</span></em>, <em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vhus.usermodule.Decoder.forward_step" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.policy.vhus.usermodule.Decoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.vhus.usermodule.Decoder.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -293,11 +297,6 @@ features in the hidden state h</p></li>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.policy.vhus.usermodule.Encoder.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.vhus.usermodule.Encoder.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -307,7 +306,16 @@ features in the hidden state h</p></li>
 <dl class="py method">
 <dt id="convlab2.policy.vhus.usermodule.VHUS.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">goals</span></em>, <em class="sig-param"><span class="n">goals_length</span></em>, <em class="sig-param"><span class="n">posts</span></em>, <em class="sig-param"><span class="n">posts_length</span></em>, <em class="sig-param"><span class="n">origin_responses</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vhus.usermodule.VHUS.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.policy.vhus.usermodule.VHUS.select_action">
@@ -326,11 +334,6 @@ features in the hidden state h</p></li>
 </dd>
 </dl>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.policy.vhus.usermodule.VHUS.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.vhus.usermodule.VHUS.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 

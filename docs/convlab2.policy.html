@@ -422,7 +422,16 @@ else when the policy outputs utterance directly, the type is str.</p>
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.ContinuousPolicy.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.ContinuousPolicy.get_log_prob">
@@ -453,11 +462,6 @@ else when the policy outputs utterance directly, the type is str.</p>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt id="convlab2.policy.rlmodule.ContinuousPolicy.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.rlmodule.ContinuousPolicy.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -467,7 +471,16 @@ else when the policy outputs utterance directly, the type is str.</p>
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.DiscretePolicy.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.DiscretePolicy.get_log_prob">
@@ -497,11 +510,6 @@ else when the policy outputs utterance directly, the type is str.</p>
 </dd>
 </dl>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.policy.rlmodule.DiscretePolicy.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.rlmodule.DiscretePolicy.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -534,7 +542,16 @@ else when the policy outputs utterance directly, the type is str.</p>
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy.forward" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
 
 <dl class="py method">
 <dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.get_log_prob">
@@ -564,11 +581,6 @@ else when the policy outputs utterance directly, the type is str.</p>
 </dd>
 </dl>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.policy.rlmodule.MultiDiscretePolicy.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.rlmodule.MultiDiscretePolicy.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
@@ -624,11 +636,6 @@ else when the policy outputs utterance directly, the type is str.</p>
 </dd>
 </dl>
 </dd></dl>
-
-<dl class="py attribute">
-<dt id="convlab2.policy.rlmodule.Value.training">
-<code class="sig-name descname">training</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></em><a class="headerlink" href="#convlab2.policy.rlmodule.Value.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </dd></dl>
 
