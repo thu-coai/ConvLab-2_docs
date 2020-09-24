@@ -90,7 +90,7 @@
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.evaluate">convlab2.nlu.milu.evaluate module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.model">convlab2.nlu.milu.model module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu.multilabel_f1_measure">convlab2.nlu.milu.multilabel_f1_measure module</a></li>
-<li><a class="reference internal" href="#convlab2-nlu-milu-train-module">convlab2.nlu.milu.train module</a></li>
+<li><a class="reference internal" href="#module-convlab2.nlu.milu.train">convlab2.nlu.milu.train module</a></li>
 <li><a class="reference internal" href="#module-convlab2.nlu.milu">Module contents</a></li>
 </ul>
 </li>
@@ -322,8 +322,67 @@ recall and f1-measure for all spans.</p>
 </dd></dl>
 
 </div>
-<div class="section" id="convlab2-nlu-milu-train-module">
-<h2>convlab2.nlu.milu.train module<a class="headerlink" href="#convlab2-nlu-milu-train-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-convlab2.nlu.milu.train">
+<span id="convlab2-nlu-milu-train-module"></span><h2>convlab2.nlu.milu.train module<a class="headerlink" href="#module-convlab2.nlu.milu.train" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">train</span></code> subcommand can be used to train a model.
+It requires a configuration file and a directory in
+which to write the results.</p>
+<dl class="py function">
+<dt id="convlab2.nlu.milu.train.train_model">
+<code class="sig-prename descclassname">convlab2.nlu.milu.train.</code><code class="sig-name descname">train_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">allennlp.common.params.Params</span></em>, <em class="sig-param"><span class="n">serialization_dir</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="n">file_friendly_logging</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em>, <em class="sig-param"><span class="n">recover</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em>, <em class="sig-param"><span class="n">force</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; allennlp.models.model.Model<a class="headerlink" href="#convlab2.nlu.milu.train.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trains the model specified in the given <code class="xref py py-class docutils literal notranslate"><span class="pre">Params</span></code> object, using the data and training
+parameters also specified in that object, and saves the results in <code class="docutils literal notranslate"><span class="pre">serialization_dir</span></code>.</p>
+<dl>
+<dt>params<span class="classifier"><code class="docutils literal notranslate"><span class="pre">Params</span></code></span></dt><dd><p>A parameter object specifying an AllenNLP Experiment.</p>
+</dd>
+<dt>serialization_dir<span class="classifier"><code class="docutils literal notranslate"><span class="pre">str</span></code></span></dt><dd><p>The directory in which to save results and logs.</p>
+</dd>
+<dt>file_friendly_logging<span class="classifier"><code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we add newlines to tqdm output, even on an interactive terminal, and we slow
+down tqdm’s output to only once every 10 seconds.</p>
+</dd>
+<dt>recover<span class="classifier"><code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will try to recover a training run from an existing serialization
+directory.  This is only intended for use when something actually crashed during the middle
+of a run.  For continuing training a model on new data, see the <code class="docutils literal notranslate"><span class="pre">fine-tune</span></code> command.</p>
+</dd>
+<dt>force<span class="classifier"><code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will overwrite the serialization directory if it already exists.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>best_model: <code class="docutils literal notranslate"><span class="pre">Model</span></code></dt><dd><p>The model with the best epoch weights.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.milu.train.train_model_from_args">
+<code class="sig-prename descclassname">convlab2.nlu.milu.train.</code><code class="sig-name descname">train_model_from_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Namespace" title="(in Python v3.8)">argparse.Namespace</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.nlu.milu.train.train_model_from_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just converts from an <code class="docutils literal notranslate"><span class="pre">argparse.Namespace</span></code> object to string paths.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="convlab2.nlu.milu.train.train_model_from_file">
+<code class="sig-prename descclassname">convlab2.nlu.milu.train.</code><code class="sig-name descname">train_model_from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parameter_filename</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="n">serialization_dir</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em>, <em class="sig-param"><span class="n">overrides</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">file_friendly_logging</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em>, <em class="sig-param"><span class="n">recover</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em>, <em class="sig-param"><span class="n">force</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> &#x2192; allennlp.models.model.Model<a class="headerlink" href="#convlab2.nlu.milu.train.train_model_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper around <a class="reference internal" href="#convlab2.nlu.milu.train.train_model" title="convlab2.nlu.milu.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a> which loads the params from a file.</p>
+<dl>
+<dt>parameter_filename<span class="classifier"><code class="docutils literal notranslate"><span class="pre">str</span></code></span></dt><dd><p>A json parameter file specifying an AllenNLP experiment.</p>
+</dd>
+<dt>serialization_dir<span class="classifier"><code class="docutils literal notranslate"><span class="pre">str</span></code></span></dt><dd><p>The directory in which to save results and logs. We just pass this along to
+<a class="reference internal" href="#convlab2.nlu.milu.train.train_model" title="convlab2.nlu.milu.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a>.</p>
+</dd>
+<dt>overrides<span class="classifier"><code class="docutils literal notranslate"><span class="pre">str</span></code></span></dt><dd><p>A JSON string that we will use to override values in the input parameter file.</p>
+</dd>
+<dt>file_friendly_logging<span class="classifier"><code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we make our output more friendly to saved model files.  We just pass this
+along to <a class="reference internal" href="#convlab2.nlu.milu.train.train_model" title="convlab2.nlu.milu.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a>.</p>
+</dd>
+<dt>recover<span class="classifier"><a href="#id3"><span class="problematic" id="id4">``</span></a>bool`, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will try to recover a training run from an existing serialization
+directory.  This is only intended for use when something actually crashed during the middle
+of a run.  For continuing training a model on new data, see the <code class="docutils literal notranslate"><span class="pre">fine-tune</span></code> command.</p>
+</dd>
+<dt>force<span class="classifier"><code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will overwrite the serialization directory if it already exists.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <div class="section" id="module-convlab2.nlu.milu">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-convlab2.nlu.milu" title="Permalink to this headline">¶</a></h2>
