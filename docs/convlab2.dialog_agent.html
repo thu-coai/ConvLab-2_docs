@@ -299,6 +299,20 @@ matching.</p>
 <dd><p>Generate agent response using the agent modules.</p>
 </dd></dl>
 
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.state_replace">
+<code class="sig-name descname">state_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agent_state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.state_replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>this interface is reserved to replace all interal states of agent
+the code snippet example below is for the scenario when the agent state only depends on self.history and self.dst.state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.agent.PipelineAgent.state_return">
+<code class="sig-name descname">state_return</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.agent.PipelineAgent.state_return" title="Permalink to this definition">¶</a></dt>
+<dd><p>this interface is reserved to return all interal states of agent
+the code snippet example below is for the scenario when the agent state only depends on self.history and self.dst.state</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -753,6 +767,20 @@ matching.</p>
 <dt id="convlab2.dialog_agent.PipelineAgent.response">
 <code class="sig-name descname">response</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.response" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate agent response using the agent modules.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.state_replace">
+<code class="sig-name descname">state_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agent_state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.state_replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>this interface is reserved to replace all interal states of agent
+the code snippet example below is for the scenario when the agent state only depends on self.history and self.dst.state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.dialog_agent.PipelineAgent.state_return">
+<code class="sig-name descname">state_return</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.dialog_agent.PipelineAgent.state_return" title="Permalink to this definition">¶</a></dt>
+<dd><p>this interface is reserved to return all interal states of agent
+the code snippet example below is for the scenario when the agent state only depends on self.history and self.dst.state</p>
 </dd></dl>
 
 </dd></dl>
