@@ -289,7 +289,7 @@
 <span id="convlab2-policy-vector-vector-multiwoz-module"></span><h2>convlab2.policy.vector.vector_multiwoz module<a class="headerlink" href="#module-convlab2.policy.vector.vector_multiwoz" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector">
-<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.vector.vector_multiwoz.</code><code class="sig-name descname">MultiWozVector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voc_file</span></em>, <em class="sig-param"><span class="n">voc_opp_file</span></em>, <em class="sig-param"><span class="n">character</span><span class="o">=</span><span class="default_value">'sys'</span></em>, <em class="sig-param"><span class="n">intent_file</span><span class="o">=</span><span class="default_value">'/home/travis/build/thu-coai/ConvLab-2/data/multiwoz/trackable_intent.json'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.vector.vector_multiwoz.</code><code class="sig-name descname">MultiWozVector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voc_file</span></em>, <em class="sig-param"><span class="n">voc_opp_file</span></em>, <em class="sig-param"><span class="n">character</span><span class="o">=</span><span class="default_value">'sys'</span></em>, <em class="sig-param"><span class="n">intent_file</span><span class="o">=</span><span class="default_value">'/home/travis/build/thu-coai/ConvLab-2/data/multiwoz/trackable_intent.json'</span></em>, <em class="sig-param"><span class="n">composite_actions</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">vocab_size</span><span class="o">=</span><span class="default_value">500</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="convlab2.policy.html#convlab2.policy.vec.Vector" title="convlab2.policy.vec.Vector"><code class="xref py py-class docutils literal notranslate"><span class="pre">convlab2.policy.vec.Vector</span></code></a></p>
 <dl class="py method">
 <dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.action_devectorize">
@@ -340,6 +340,12 @@ Args:</p>
 <dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.generate_dict">
 <code class="sig-name descname">generate_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.generate_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>init the dict for mapping state/action into vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.vector.vector_multiwoz.MultiWozVector.load_composite_actions">
+<code class="sig-name descname">load_composite_actions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.vector.vector_multiwoz.MultiWozVector.load_composite_actions" title="Permalink to this definition">¶</a></dt>
+<dd><p>load the composite actions to self.da_voc</p>
 </dd></dl>
 
 <dl class="py method">

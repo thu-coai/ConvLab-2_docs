@@ -514,6 +514,44 @@ registered hooks while the latter silently ignores them.</p>
 </dd></dl>
 
 <dl class="py class">
+<dt id="convlab2.policy.rlmodule.EpsilonGreedyPolicy">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">EpsilonGreedyPolicy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_dim</span></em>, <em class="sig-param"><span class="n">h_dim</span></em>, <em class="sig-param"><span class="n">a_dim</span></em>, <em class="sig-param"><span class="n">epsilon_spec</span><span class="o">=</span><span class="default_value">{'end': 0.0, 'end_epoch': 200, 'start': 0.1}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.EpsilonGreedyPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.EpsilonGreedyPolicy.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.EpsilonGreedyPolicy.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.EpsilonGreedyPolicy.select_action">
+<code class="sig-name descname">select_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em>, <em class="sig-param"><span class="n">is_train</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.EpsilonGreedyPolicy.select_action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – [s_dim]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.EpsilonGreedyPolicy.update_epsilon">
+<code class="sig-name descname">update_epsilon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">epoch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.EpsilonGreedyPolicy.update_epsilon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt id="convlab2.policy.rlmodule.Memory">
 <em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">Memory</code><a class="headerlink" href="#convlab2.policy.rlmodule.Memory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
@@ -532,6 +570,35 @@ registered hooks while the latter silently ignores them.</p>
 <code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.Memory.push" title="Permalink to this definition">¶</a></dt>
 <dd><p>Saves a transition.</p>
 </dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="convlab2.policy.rlmodule.MemoryReplay">
+<em class="property">class </em><code class="sig-prename descclassname">convlab2.policy.rlmodule.</code><code class="sig-name descname">MemoryReplay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">max_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MemoryReplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The difference to class Memory is that MemoryReplay has a limited size.
+It is mainly used for off-policy algorithms.</p>
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MemoryReplay.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_memory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MemoryReplay.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MemoryReplay.get_batch">
+<code class="sig-name descname">get_batch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">batch_size</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MemoryReplay.get_batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MemoryReplay.push">
+<code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MemoryReplay.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a transition.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="convlab2.policy.rlmodule.MemoryReplay.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#convlab2.policy.rlmodule.MemoryReplay.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
